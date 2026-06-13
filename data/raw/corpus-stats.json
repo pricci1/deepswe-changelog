@@ -8,7 +8,6 @@
     "prompt_chars_mean": 2158.1,
     "prompt_chars_median": 1975
   },
-  "scope": "Corpus-level statistics across full DeepSWE, SWE-Bench Pro, and SWE-Bench Verified datasets",
   "swebenchpro": {
     "n_tasks": 731,
     "patch_files_mean": 5.07,

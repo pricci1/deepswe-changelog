@@ -468,7 +468,5 @@
       "n_bad": 21,
       "n_reviewed": 162
     }
-  ],
-  "scope": "Critique pass: false-positive / false-negative rates of the verifier, per model and benchmark",
-  "unit": "fp_rate = passed-but-bad / n_reviewed; fn_rate = failed-but-good / n_reviewed"
+  ]
 }

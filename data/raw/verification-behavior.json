@@ -6,8 +6,6 @@
     "nothing",
     "unknown"
   ],
-  "description": "Per-model verification behavior: how each agent checked its work before submitting. Classified from full agent trajectories.",
-  "generated_at": "2026-05-22T03:08:49.122473+00:00",
   "n_trials": 5685,
   "rows": [
     {

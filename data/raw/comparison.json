@@ -1,60 +1,49 @@
 {
-  "deep_swe_source": "data/clean/leaderboard.json (full DeepSWE run, 113 tasks)",
   "n_paired_tasks_per_benchmark": null,
   "rows": [
     {
       "deep_swe_pass_rate": 0.7004504504504504,
       "model": "gpt-5-5",
-      "swebenchpro_pass_rate": 0.586,
-      "swebenchpro_source_url": "https://openai.com/index/introducing-gpt-5-5/"
+      "swebenchpro_pass_rate": 0.586
     },
     {
       "deep_swe_pass_rate": 0.5420353982300885,
       "model": "claude-opus-4-7",
-      "swebenchpro_pass_rate": 0.643,
-      "swebenchpro_source_url": "https://www.anthropic.com/news/claude-opus-4-7"
+      "swebenchpro_pass_rate": 0.643
     },
     {
       "deep_swe_pass_rate": 0.5553097345132744,
       "model": "gpt-5-4",
-      "swebenchpro_pass_rate": 0.577,
-      "swebenchpro_source_url": "https://openai.com/index/introducing-gpt-5-5/"
+      "swebenchpro_pass_rate": 0.577
     },
     {
       "deep_swe_pass_rate": 0.32,
       "model": "claude-sonnet-4-6",
-      "swebenchpro_pass_rate": 0.544,
-      "swebenchpro_source_url": "https://labs.scale.com/leaderboard/swe_bench_pro_public"
+      "swebenchpro_pass_rate": 0.544
     },
     {
       "deep_swe_pass_rate": 0.24336283185840707,
       "model": "gpt-5-4-mini",
-      "swebenchpro_pass_rate": 0.544,
-      "swebenchpro_source_url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/"
+      "swebenchpro_pass_rate": 0.544
     },
     {
       "deep_swe_pass_rate": 0.09882005899705014,
       "model": "gemini-3-1-pro-preview",
-      "swebenchpro_pass_rate": 0.461,
-      "swebenchpro_source_url": "https://labs.scale.com/leaderboard/swe_bench_pro_public"
+      "swebenchpro_pass_rate": 0.461
     },
     {
       "deep_swe_pass_rate": 0.051622418879056046,
       "model": "gemini-3-flash-preview",
-      "swebenchpro_pass_rate": 0.3463,
-      "swebenchpro_source_url": "https://labs.scale.com/leaderboard/swe_bench_pro_public"
+      "swebenchpro_pass_rate": 0.3463
     },
     {
       "deep_swe_pass_rate": 0.0022123893805309734,
       "model": "claude-haiku-4-5",
-      "swebenchpro_pass_rate": 0.3945,
-      "swebenchpro_source_url": "https://labs.scale.com/leaderboard/swe_bench_pro_public"
+      "swebenchpro_pass_rate": 0.3945
     }
   ],
-  "scope": "Cross-benchmark comparison: DeepSWE pass rates from the main 113-task leaderboard against publicly reported SWE-Bench Pro pass rates.",
   "spread": {
     "deep_swe": 0.6982380610699195,
     "swebenchpro": 0.2967
-  },
-  "swebenchpro_source": "data/raw/swebench_pro_public_scores.json (vendor announcements and Scale Labs leaderboard)"
+  }
 }

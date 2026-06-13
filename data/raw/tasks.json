@@ -1131,6 +1131,5 @@
       "repository": "carvel-dev/ytt",
       "repository_url": "https://github.com/carvel-dev/ytt"
     }
-  ],
-  "scope": "All 113 DeepSWE task definitions"
+  ]
 }

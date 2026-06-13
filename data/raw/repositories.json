@@ -2,733 +2,550 @@
   "n_repositories": 91,
   "repositories": [
     {
-      "description": "Performant real-time state management for React and TypeScript",
       "n_files": 475,
       "n_tasks": 5,
       "name": "pmndrs/koota",
-      "primary_language": "TypeScript",
-      "stars": 684
+      "primary_language": "TypeScript"
     },
     {
-      "description": "A next generation HTTP client for Python.",
       "n_files": 125,
       "n_tasks": 3,
       "name": "encode/httpx",
-      "primary_language": "Python",
-      "stars": 15262
+      "primary_language": "Python"
     },
     {
-      "description": "Bandit is a tool designed to find common security issues in Python code.",
       "n_files": 298,
       "n_tasks": 3,
       "name": "PyCQA/bandit",
-      "primary_language": "Python",
-      "stars": 8021
+      "primary_language": "Python"
     },
     {
-      "description": "An Obsidian plugin that formats and styles your notes with a focus on configurability and extensibility.",
       "n_files": 320,
       "n_tasks": 3,
       "name": "platers/obsidian-linter",
-      "primary_language": "TypeScript",
-      "stars": 1920
+      "primary_language": "TypeScript"
     },
     {
-      "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
       "n_files": 2988,
       "n_tasks": 2,
       "name": "fastapi/fastapi",
-      "primary_language": "Python",
-      "stars": 98127
+      "primary_language": "Python"
     },
     {
-      "description": "The Prometheus monitoring system and time series database.",
       "n_files": 1611,
       "n_tasks": 2,
       "name": "prometheus/prometheus",
-      "primary_language": "TypeScript",
-      "stars": 64002
+      "primary_language": "TypeScript"
     },
     {
-      "description": "The lean application framework for Python. Build sophisticated user interfaces with a simple Python API. Run your apps in the terminal and a web browser.",
       "n_files": 2117,
       "n_tasks": 2,
       "name": "Textualize/textual",
-      "primary_language": "Python",
-      "stars": 35856
+      "primary_language": "Python"
     },
     {
-      "description": "The Kubernetes Package Manager",
       "n_files": 1995,
       "n_tasks": 2,
       "name": "helm/helm",
-      "primary_language": "Go",
-      "stars": 29802
+      "primary_language": "Go"
     },
     {
-      "description": "Open Policy Agent (OPA) is an open source, general-purpose policy engine.",
       "n_files": 7468,
       "n_tasks": 2,
       "name": "open-policy-agent/opa",
-      "primary_language": "Go",
-      "stars": 11712
+      "primary_language": "Go"
     },
     {
-      "description": "A JavaScript implementation of a web browser without its graphical user interface",
       "n_files": 1046,
       "n_tasks": 2,
       "name": "capricorn86/happy-dom",
-      "primary_language": "TypeScript",
-      "stars": 4471
+      "primary_language": "TypeScript"
     },
     {
-      "description": "A fast script language for Go",
       "n_files": 119,
       "n_tasks": 2,
       "name": "d5/tengo",
-      "primary_language": "Go",
-      "stars": 3804
+      "primary_language": "Go"
     },
     {
-      "description": "Messaging library for Python.",
       "n_files": 343,
       "n_tasks": 2,
       "name": "celery/kombu",
-      "primary_language": "Python",
-      "stars": 3111
+      "primary_language": "Python"
     },
     {
-      "description": "Test'em 'Scripts! A test runner that makes Javascript unit testing fun.",
       "n_files": 485,
       "n_tasks": 2,
       "name": "testem/testem",
-      "primary_language": "JavaScript",
-      "stars": 2919
+      "primary_language": "JavaScript"
     },
     {
-      "description": "Lightweight and type-safe query builder for DynamoDB and TypeScript",
       "n_files": 914,
       "n_tasks": 2,
       "name": "dynamodb-toolbox/dynamodb-toolbox",
-      "primary_language": "TypeScript",
-      "stars": 1998
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Scriptable interpreter written in golang",
       "n_files": 142,
       "n_tasks": 2,
       "name": "mattn/anko",
-      "primary_language": "Go",
-      "stars": 1564
+      "primary_language": "Go"
     },
     {
-      "description": "Home of the ABS programming language: the joy of shell scripting.",
       "n_files": 326,
       "n_tasks": 2,
       "name": "abs-lang/abs",
-      "primary_language": "Go",
-      "stars": 610
+      "primary_language": "Go"
     },
     {
-      "description": "The agent engineering platform.",
       "n_files": 2882,
       "n_tasks": 1,
       "name": "langchain-ai/langchain",
-      "primary_language": "Python",
-      "stars": 136553
+      "primary_language": "Python"
     },
     {
-      "description": "Powerful asynchronous state management, server-state utilities and data fetching for the web. TS/JS, React Query, Solid Query, Svelte Query and Vue Query.",
       "n_files": 2343,
       "n_tasks": 1,
       "name": "TanStack/query",
-      "primary_language": "TypeScript",
-      "stars": 49402
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Quill is a modern WYSIWYG editor built for compatibility and extensibility",
       "n_files": 377,
       "n_tasks": 1,
       "name": "slab/quill",
-      "primary_language": "TypeScript",
-      "stars": 47103
+      "primary_language": "TypeScript"
     },
     {
-      "description": "A simple, fast and user-friendly alternative to 'find'",
       "n_files": 57,
       "n_tasks": 1,
       "name": "sharkdp/fd",
-      "primary_language": "Rust",
-      "stars": 42943
+      "primary_language": "Rust"
     },
     {
-      "description": "React for interactive command-line apps",
       "n_files": 247,
       "n_tasks": 1,
       "name": "vadimdemedes/ink",
-      "primary_language": "TypeScript",
-      "stars": 38309
+      "primary_language": "TypeScript"
     },
     {
-      "description": "ORM",
       "n_files": 1387,
       "n_tasks": 1,
       "name": "drizzle-team/drizzle-orm",
-      "primary_language": "TypeScript",
-      "stars": 34346
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Shared data types for building collaborative software",
       "n_files": 74,
       "n_tasks": 1,
       "name": "yjs/yjs",
-      "primary_language": "JavaScript",
-      "stars": 21814
+      "primary_language": "JavaScript"
     },
     {
-      "description": "Fast math typesetting for the web.",
       "n_files": 705,
       "n_tasks": 1,
       "name": "KaTeX/KaTeX",
-      "primary_language": "JavaScript",
-      "stars": 20060
+      "primary_language": "JavaScript"
     },
     {
-      "description": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.",
       "n_files": 475,
       "n_tasks": 1,
       "name": "ipython/ipython",
-      "primary_language": "Python",
-      "stars": 16697
+      "primary_language": "Python"
     },
     {
-      "description": "Next generation testing framework powered by Vite.",
       "n_files": 2989,
       "n_tasks": 1,
       "name": "vitest-dev/vitest",
-      "primary_language": "TypeScript",
-      "stars": 16519
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Release engineering, simplified",
       "n_files": 1087,
       "n_tasks": 1,
       "name": "goreleaser/goreleaser",
-      "primary_language": "Go",
-      "stars": 15798
+      "primary_language": "Go"
     },
     {
-      "description": "A fast, cross-platform build tool inspired by Make, designed for modern workflows.",
       "n_files": 764,
       "n_tasks": 1,
       "name": "go-task/task",
-      "primary_language": "Go",
-      "stars": 15510
+      "primary_language": "Go"
     },
     {
-      "description": "The exhaustive Pattern Matching library for TypeScript, with smart type inference.",
       "n_files": 101,
       "n_tasks": 1,
       "name": "gvergnaud/ts-pattern",
-      "primary_language": "TypeScript",
-      "stars": 14988
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Build production-ready applications in TypeScript",
       "n_files": 2212,
       "n_tasks": 1,
       "name": "Effect-TS/effect",
-      "primary_language": "TypeScript",
-      "stars": 14157
+      "primary_language": "TypeScript"
     },
     {
-      "description": "A type-safe TypeScript SQL query builder",
       "n_files": 749,
       "n_tasks": 1,
       "name": "kysely-org/kysely",
-      "primary_language": "TypeScript",
-      "stars": 13785
+      "primary_language": "TypeScript"
     },
     {
-      "description": "CTF framework and exploit development library",
       "n_files": 1466,
       "n_tasks": 1,
       "name": "Gallopsled/pwntools",
-      "primary_language": "Python",
-      "stars": 13434
+      "primary_language": "Python"
     },
     {
-      "description": "NumPy aware dynamic Python compiler using LLVM",
       "n_files": 1057,
       "n_tasks": 1,
       "name": "numba/numba",
-      "primary_language": "Python",
-      "stars": 11019
+      "primary_language": "Python"
     },
     {
-      "description": "The modular and type safe schema library for validating structural data",
       "n_files": 3322,
       "n_tasks": 1,
       "name": "open-circle/valibot",
-      "primary_language": "TypeScript",
-      "stars": 8627
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Sloc, Cloc and Code: scc is a very fast accurate code counter with complexity calculations and COCOMO estimates written in pure Go",
       "n_files": 1184,
       "n_tasks": 1,
       "name": "boyter/scc",
-      "primary_language": "Go",
-      "stars": 8379
+      "primary_language": "Go"
     },
     {
-      "description": "Yaegi is Another Elegant Go Interpreter",
       "n_files": 1655,
       "n_tasks": 1,
       "name": "traefik/yaegi",
-      "primary_language": "Go",
-      "stars": 8226
+      "primary_language": "Go"
     },
     {
-      "description": "Select, put and delete data from JSON, TOML, YAML, XML, INI, HCL and CSV files with a single tool. Also available as a go mod.",
       "n_files": 304,
       "n_tasks": 1,
       "name": "TomWright/dasel",
-      "primary_language": "Go",
-      "stars": 7932
+      "primary_language": "Go"
     },
     {
-      "description": "Expression language and expression evaluation for Go",
       "n_files": 232,
       "n_tasks": 1,
       "name": "expr-lang/expr",
-      "primary_language": "Go",
-      "stars": 7848
+      "primary_language": "Go"
     },
     {
-      "description": "TypeScript's 1:1 validator, optimized from editor to runtime",
       "n_files": 569,
       "n_tasks": 1,
       "name": "arktypeio/arktype",
-      "primary_language": "TypeScript",
-      "stars": 7757
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Effortlessly build beautiful command-line apps",
       "n_files": 157,
       "n_tasks": 1,
       "name": "bombshell-dev/clack",
-      "primary_language": "TypeScript",
-      "stars": 7757
+      "primary_language": "TypeScript"
     },
     {
-      "description": "A highly extensible Git implementation in pure Go.",
       "n_files": 656,
       "n_tasks": 1,
       "name": "go-git/go-git",
-      "primary_language": "Go",
-      "stars": 7457
+      "primary_language": "Go"
     },
     {
-      "description": "Boa is an embeddable Javascript engine written in Rust.",
       "n_files": 986,
       "n_tasks": 1,
       "name": "boa-dev/boa",
-      "primary_language": "Rust",
-      "stars": 7236
+      "primary_language": "Rust"
     },
     {
-      "description": "wazero: the zero dependency WebAssembly runtime for Go developers",
       "n_files": 10261,
       "n_tasks": 1,
       "name": "wazero/wazero",
-      "primary_language": "Go",
-      "stars": 6116
+      "primary_language": "Go"
     },
     {
-      "description": "RocksDB/LevelDB inspired key-value database in Go",
       "n_files": 1416,
       "n_tasks": 1,
       "name": "cockroachdb/pebble",
-      "primary_language": "Go",
-      "stars": 5881
+      "primary_language": "Go"
     },
     {
-      "description": "The Cloud-Native API Gateway and AI Gateway",
       "n_files": 2325,
       "n_tasks": 1,
       "name": "kgateway-dev/kgateway",
-      "primary_language": "Go",
-      "stars": 5507
+      "primary_language": "Go"
     },
     {
-      "description": "Modern Docker Management, Designed for Everyone",
       "n_files": 1709,
       "n_tasks": 1,
       "name": "getarcaneapp/arcane",
-      "primary_language": "Go",
-      "stars": 5506
+      "primary_language": "Go"
     },
     {
-      "description": "The Elegant Parser",
       "n_files": 170,
       "n_tasks": 1,
       "name": "pest-parser/pest",
-      "primary_language": "Rust",
-      "stars": 5337
+      "primary_language": "Rust"
     },
     {
-      "description": "A better fetch API. Works everywhere.",
       "n_files": 33,
       "n_tasks": 1,
       "name": "unjs/ofetch",
-      "primary_language": "TypeScript",
-      "stars": 5273
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Safely serialize JavaScript expressions to a superset of JSON, which includes Dates, BigInts, and more.",
       "n_files": 31,
       "n_tasks": 1,
       "name": "flightcontrolhq/superjson",
-      "primary_language": "TypeScript",
-      "stars": 5251
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Find dead Python code",
       "n_files": 63,
       "n_tasks": 1,
       "name": "jendrikseipp/vulture",
-      "primary_language": "Python",
-      "stars": 4597
+      "primary_language": "Python"
     },
     {
-      "description": "A crypto-secure Reliable-UDP library for Golang with FEC support.",
       "n_files": 43,
       "n_tasks": 1,
       "name": "xtaci/kcp-go",
-      "primary_language": "Go",
-      "stars": 4483
+      "primary_language": "Go"
     },
     {
-      "description": "Make your functions return something meaningful, typed, and safe!",
       "n_files": 407,
       "n_tasks": 1,
       "name": "dry-python/returns",
-      "primary_language": "Python",
-      "stars": 4282
+      "primary_language": "Python"
     },
     {
-      "description": "Extremely powerful Inversion of Control (IoC) container for Node.JS",
       "n_files": 83,
       "n_tasks": 1,
       "name": "jeffijoe/awilix",
-      "primary_language": "TypeScript",
-      "stars": 4156
+      "primary_language": "TypeScript"
     },
     {
-      "description": ":octocat: Static checker for GitHub Actions workflow files",
       "n_files": 850,
       "n_tasks": 1,
       "name": "rhysd/actionlint",
-      "primary_language": "Go",
-      "stars": 3865
+      "primary_language": "Go"
     },
     {
-      "description": "A parser library for Go",
       "n_files": 124,
       "n_tasks": 1,
       "name": "alecthomas/participle",
-      "primary_language": "Go",
-      "stars": 3862
+      "primary_language": "Go"
     },
     {
-      "description": "a delightful machine learning tool that allows you to train, test, and use models without writing code",
       "n_files": 110,
       "n_tasks": 1,
       "name": "nidhaloff/igel",
-      "primary_language": "Python",
-      "stars": 3138
+      "primary_language": "Python"
     },
     {
-      "description": "A whitespace formatter for different query languages",
       "n_files": 219,
       "n_tasks": 1,
       "name": "sql-formatter-org/sql-formatter",
-      "primary_language": "TypeScript",
-      "stars": 2847
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Useful extensions to the standard Python datetime features",
       "n_files": 92,
       "n_tasks": 1,
       "name": "dateutil/dateutil",
-      "primary_language": "Python",
-      "stars": 2616
+      "primary_language": "Python"
     },
     {
-      "description": "Efficient and versatile WebAssembly interpreter for embedded systems.",
       "n_files": 336,
       "n_tasks": 1,
       "name": "wasmi-labs/wasmi",
-      "primary_language": "Rust",
-      "stars": 2112
+      "primary_language": "Rust"
     },
     {
-      "description": "A tool set for CSS including fast detailed parser, walker, generator and lexer based on W3C specs and browser implementations",
       "n_files": 331,
       "n_tasks": 1,
       "name": "csstree/csstree",
-      "primary_language": "JavaScript",
-      "stars": 2097
+      "primary_language": "JavaScript"
     },
     {
-      "description": "Python CLI utility and library for manipulating SQLite databases",
       "n_files": 94,
       "n_tasks": 1,
       "name": "simonw/sqlite-utils",
-      "primary_language": "Python",
-      "stars": 2051
+      "primary_language": "Python"
     },
     {
-      "description": "The most opinionated Go source code linter for code audit.",
       "n_files": 396,
       "n_tasks": 1,
       "name": "go-critic/go-critic",
-      "primary_language": "Go",
-      "stars": 2046
+      "primary_language": "Go"
     },
     {
-      "description": "Batteries Included State Management for React",
       "n_files": 90,
       "n_tasks": 1,
       "name": "keajs/kea",
-      "primary_language": "TypeScript",
-      "stars": 1995
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Advanced ANSI style & color support for your terminal applications",
       "n_files": 53,
       "n_tasks": 1,
       "name": "muesli/termenv",
-      "primary_language": "Go",
-      "stars": 1988
+      "primary_language": "Go"
     },
     {
-      "description": "YAML templating tool that works on YAML structure instead of text",
       "n_files": 1191,
       "n_tasks": 1,
       "name": "carvel-dev/ytt",
-      "primary_language": "Go",
-      "stars": 1847
+      "primary_language": "Go"
     },
     {
-      "description": "S2 geometry library in Go",
       "n_files": 154,
       "n_tasks": 1,
       "name": "golang/geo",
-      "primary_language": "Go",
-      "stars": 1838
+      "primary_language": "Go"
     },
     {
-      "description": "A GraphQL client in Python",
       "n_files": 203,
       "n_tasks": 1,
       "name": "graphql-python/gql",
-      "primary_language": "Python",
-      "stars": 1671
+      "primary_language": "Python"
     },
     {
-      "description": "Parse, query and modify XML easily in go",
       "n_files": 12,
       "n_tasks": 1,
       "name": "beevik/etree",
-      "primary_language": "Go",
-      "stars": 1658
+      "primary_language": "Go"
     },
     {
-      "description": "Machine learning with dataframes",
       "n_files": 378,
       "n_tasks": 1,
       "name": "skrub-data/skrub",
-      "primary_language": "Python",
-      "stars": 1609
+      "primary_language": "Python"
     },
     {
-      "description": "Lightweight and extensible compatibility layer between dataframe libraries!",
       "n_files": 621,
       "n_tasks": 1,
       "name": "narwhals-dev/narwhals",
-      "primary_language": "Python",
-      "stars": 1606
+      "primary_language": "Python"
     },
     {
-      "description": "Python package for reading Adobe Photoshop PSD files",
       "n_files": 500,
       "n_tasks": 1,
       "name": "psd-tools/psd-tools",
-      "primary_language": "Python",
-      "stars": 1392
+      "primary_language": "Python"
     },
     {
-      "description": "Safe and idiomatic TypeScript types to handle null, error, and async code handling: Maybe, Result, and Task types that are really nice.",
       "n_files": 75,
       "n_tasks": 1,
       "name": "true-myth/true-myth",
-      "primary_language": "TypeScript",
-      "stars": 1338
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Expressive statecharts and FSMs for modern Python.",
       "n_files": 528,
       "n_tasks": 1,
       "name": "fgmacedo/python-statemachine",
-      "primary_language": "Python",
-      "stars": 1235
+      "primary_language": "Python"
     },
     {
-      "description": "A 100% compliant, self-hosted javascript parser - https://meriyah.github.io/meriyah",
       "n_files": 312,
       "n_tasks": 1,
       "name": "meriyah/meriyah",
-      "primary_language": "TypeScript",
-      "stars": 1203
+      "primary_language": "TypeScript"
     },
     {
-      "description": "A TypeScript-first, runtime-agnostic command-line toolkit for building complex CLIs — featuring a command framework, argument parser, interactive prompts, tables, ANSI utilities, and more.",
       "n_files": 441,
       "n_tasks": 1,
       "name": "c4spar/cliffy",
-      "primary_language": "TypeScript",
-      "stars": 1147
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Google Gen AI Go SDK provides an interface for developers to integrate Google's generative models into their Go applications.",
       "n_files": 139,
       "n_tasks": 1,
       "name": "googleapis/go-genai",
-      "primary_language": "Go",
-      "stars": 1112
+      "primary_language": "Go"
     },
     {
-      "description": "media file renaming and organizing tool",
       "n_files": 69,
       "n_tasks": 1,
       "name": "jkwill87/mnamer",
-      "primary_language": "Python",
-      "stars": 1099
+      "primary_language": "Python"
     },
     {
-      "description": "Composable custom class converters for attrs, dataclasses and friends.",
       "n_files": 173,
       "n_tasks": 1,
       "name": "python-attrs/cattrs",
-      "primary_language": "Python",
-      "stars": 1028
+      "primary_language": "Python"
     },
     {
-      "description": "Uptime monitoring CLI tool with alerting and advanced settings",
       "n_files": 88,
       "n_tasks": 1,
       "name": "Owloops/updo",
-      "primary_language": "Go",
-      "stars": 984
+      "primary_language": "Go"
     },
     {
-      "description": "Effortless database administration tool",
       "n_files": 111,
       "n_tasks": 1,
       "name": "liweiyi88/onedump",
-      "primary_language": "Go",
-      "stars": 966
+      "primary_language": "Go"
     },
     {
-      "description": "Fast and well tested serialization library",
       "n_files": 175,
       "n_tasks": 1,
       "name": "Fatal1ty/mashumaro",
-      "primary_language": "Python",
-      "stars": 918
+      "primary_language": "Python"
     },
     {
-      "description": "Desktop app and API created in public for multi-agent Claude Code orchestration - coordinate local and remote agents through @mentions.",
       "n_files": 217,
       "n_tasks": 1,
       "name": "baryhuang/claude-code-by-agents",
-      "primary_language": "TypeScript",
-      "stars": 867
+      "primary_language": "TypeScript"
     },
     {
-      "description": "Style-preserving TOML library for Python",
       "n_files": 81,
       "n_tasks": 1,
       "name": "python-poetry/tomlkit",
-      "primary_language": "Python",
-      "stars": 823
+      "primary_language": "Python"
     },
     {
-      "description": "An opinionated backend framework based on NestJS. Get your CRUD app up and running in no time!",
       "n_files": 327,
       "n_tasks": 1,
       "name": "eicrud/eicrud",
-      "primary_language": "TypeScript",
-      "stars": 812
+      "primary_language": "TypeScript"
     },
     {
-      "description": "aiomonitor is module that adds monitor and python REPL capabilities for asyncio application",
       "n_files": 79,
       "n_tasks": 1,
       "name": "aio-libs/aiomonitor",
-      "primary_language": "Python",
-      "stars": 772
+      "primary_language": "Python"
     },
     {
-      "description": "E2E test framework for tests with complex environment requirements.",
       "n_files": 131,
       "n_tasks": 1,
       "name": "google/mobly",
-      "primary_language": "Python",
-      "stars": 738
+      "primary_language": "Python"
     },
     {
-      "description": "Type-safe combinatorial CLI parser for TypeScript",
       "n_files": 277,
       "n_tasks": 1,
       "name": "dahlia/optique",
-      "primary_language": "TypeScript",
-      "stars": 683
+      "primary_language": "TypeScript"
     },
     {
-      "description": "An extremely flexible and configurable data model conversion library.",
       "n_files": 521,
       "n_tasks": 1,
       "name": "reagento/adaptix",
-      "primary_language": "Python",
-      "stars": 596
+      "primary_language": "Python"
     },
     {
-      "description": "The world’s most powerful template engine and Go embeddable interpreter",
       "n_files": 2060,
       "n_tasks": 1,
       "name": "open2b/scriggo",
-      "primary_language": "Go",
-      "stars": 576
+      "primary_language": "Go"
     },
     {
-      "description": "Fastest SVG toolchain for optimisation, minification, linting, and actions. Usable via CLI, Node, Wasm, or Rust.",
       "n_files": 627,
       "n_tasks": 1,
       "name": "noahbald/oxvg",
-      "primary_language": "Rust",
-      "stars": 541
+      "primary_language": "Rust"
     },
     {
-      "description": "sqlfmt formats your dbt SQL files so you don't have to",
       "n_files": 235,
       "n_tasks": 1,
       "name": "tconbeer/sqlfmt",
-      "primary_language": "Python",
-      "stars": 534
+      "primary_language": "Python"
     }
-  ],
-  "scope": "All repositories represented in the 113-task set"
+  ]
 }

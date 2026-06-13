@@ -240,7 +240,5 @@
       "pass_at_1": 0.0022123893805309734,
       "pass_rate": 0.0022123893805309734
     }
-  ],
-  "scope": "Per-model behavior aggregates over selected DeepSWE representative configs",
-  "unit": "pass_rate is passed scored attempts / scored attempts over the full DeepSWE config; other fields are medians over scored trials"
+  ]
 }
