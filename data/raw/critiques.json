@@ -1,0 +1,474 @@
+{
+  "headline": {
+    "deepswe": {
+      "bad_rate": 0.013605442176870748,
+      "fn_rate": 0.010884353741496598,
+      "fp_rate": 0.0027210884353741495,
+      "n_bad": 10,
+      "n_false_negative": 8,
+      "n_false_positive": 2,
+      "n_reviewed": 735,
+      "tags": {
+        "FAIL_AMBIGUOUS_TASK": 1,
+        "FAIL_INTEGRATION_ERROR": 75,
+        "FAIL_KNOWLEDGE_GAP": 3,
+        "FAIL_MISSED_REQUIREMENT": 329,
+        "FAIL_REGRESSION": 46,
+        "FAIL_SYNTAX_ERROR": 20,
+        "FAIL_TEST_BROKEN": 1,
+        "FAIL_TEST_MISMATCH": 5,
+        "FAIL_TRIAL_INCOMPLETE": 1,
+        "FAIL_UNVERIFIED_ASSUMPTION": 10,
+        "FAIL_WRONG_FILE": 7,
+        "FAIL_WRONG_LOGIC": 19,
+        "PASS_CHEATED": 1,
+        "PASS_LEGITIMATE": 217
+      }
+    },
+    "pro": {
+      "bad_rate": 0.3244613434727503,
+      "fn_rate": 0.23954372623574144,
+      "fp_rate": 0.08491761723700887,
+      "n_bad": 256,
+      "n_false_negative": 189,
+      "n_false_positive": 67,
+      "n_reviewed": 789,
+      "tags": {
+        "FAIL_AMBIGUOUS_TASK": 7,
+        "FAIL_EXECUTION_ERROR_EXTERNAL": 1,
+        "FAIL_INTEGRATION_ERROR": 40,
+        "FAIL_MISSED_REQUIREMENT": 122,
+        "FAIL_MISUNDERSTOOD_TASK": 2,
+        "FAIL_REGRESSION": 18,
+        "FAIL_SYNTAX_ERROR": 4,
+        "FAIL_TEST_BROKEN": 52,
+        "FAIL_TEST_MISMATCH": 119,
+        "FAIL_UNVERIFIED_ASSUMPTION": 3,
+        "FAIL_WRONG_LOGIC": 2,
+        "PASS_CHEATED": 37,
+        "PASS_LEGITIMATE": 382
+      }
+    }
+  },
+  "models": [
+    {
+      "deepswe": {
+        "bad_rate": 0.05,
+        "fn_rate": 0.05,
+        "fp_rate": 0,
+        "n_bad": 4,
+        "n_false_negative": 4,
+        "n_false_positive": 0,
+        "n_reviewed": 80,
+        "tags": {
+          "FAIL_AMBIGUOUS_TASK": 1,
+          "FAIL_INTEGRATION_ERROR": 5,
+          "FAIL_MISSED_REQUIREMENT": 50,
+          "FAIL_REGRESSION": 2,
+          "FAIL_TEST_MISMATCH": 2,
+          "FAIL_WRONG_LOGIC": 2,
+          "PASS_LEGITIMATE": 18
+        }
+      },
+      "model": "claude-opus-4-6",
+      "pro": {
+        "bad_rate": 0.4222222222222222,
+        "fn_rate": 0.2,
+        "fp_rate": 0.2222222222222222,
+        "n_bad": 38,
+        "n_false_negative": 18,
+        "n_false_positive": 20,
+        "n_reviewed": 90,
+        "tags": {
+          "FAIL_AMBIGUOUS_TASK": 2,
+          "FAIL_INTEGRATION_ERROR": 3,
+          "FAIL_MISSED_REQUIREMENT": 16,
+          "FAIL_TEST_BROKEN": 7,
+          "FAIL_TEST_MISMATCH": 10,
+          "PASS_CHEATED": 13,
+          "PASS_LEGITIMATE": 39
+        }
+      }
+    },
+    {
+      "deepswe": {
+        "bad_rate": 0.022222222222222223,
+        "fn_rate": 0.022222222222222223,
+        "fp_rate": 0,
+        "n_bad": 2,
+        "n_false_negative": 2,
+        "n_false_positive": 0,
+        "n_reviewed": 90,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 6,
+          "FAIL_MISSED_REQUIREMENT": 33,
+          "FAIL_TEST_MISMATCH": 2,
+          "FAIL_WRONG_LOGIC": 4,
+          "PASS_LEGITIMATE": 45
+        }
+      },
+      "model": "claude-opus-4-7",
+      "pro": {
+        "bad_rate": 0.3103448275862069,
+        "fn_rate": 0.1724137931034483,
+        "fp_rate": 0.13793103448275862,
+        "n_bad": 27,
+        "n_false_negative": 15,
+        "n_false_positive": 12,
+        "n_reviewed": 87,
+        "tags": {
+          "FAIL_AMBIGUOUS_TASK": 1,
+          "FAIL_INTEGRATION_ERROR": 3,
+          "FAIL_MISSED_REQUIREMENT": 8,
+          "FAIL_TEST_BROKEN": 5,
+          "FAIL_TEST_MISMATCH": 9,
+          "PASS_CHEATED": 11,
+          "PASS_LEGITIMATE": 50
+        }
+      }
+    },
+    {
+      "deepswe": {
+        "bad_rate": 0.022222222222222223,
+        "fn_rate": 0.011111111111111112,
+        "fp_rate": 0.011111111111111112,
+        "n_bad": 2,
+        "n_false_negative": 1,
+        "n_false_positive": 1,
+        "n_reviewed": 90,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 1,
+          "FAIL_MISSED_REQUIREMENT": 28,
+          "FAIL_REGRESSION": 7,
+          "FAIL_SYNTAX_ERROR": 1,
+          "FAIL_TEST_MISMATCH": 1,
+          "FAIL_UNVERIFIED_ASSUMPTION": 3,
+          "FAIL_WRONG_LOGIC": 4,
+          "PASS_CHEATED": 1,
+          "PASS_LEGITIMATE": 44
+        }
+      },
+      "model": "gpt-5-4",
+      "pro": {
+        "bad_rate": 0.34444444444444444,
+        "fn_rate": 0.32222222222222224,
+        "fp_rate": 0.022222222222222223,
+        "n_bad": 31,
+        "n_false_negative": 29,
+        "n_false_positive": 2,
+        "n_reviewed": 90,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 1,
+          "FAIL_MISSED_REQUIREMENT": 7,
+          "FAIL_REGRESSION": 2,
+          "FAIL_SYNTAX_ERROR": 2,
+          "FAIL_TEST_BROKEN": 4,
+          "FAIL_TEST_MISMATCH": 25,
+          "PASS_LEGITIMATE": 49
+        }
+      }
+    },
+    {
+      "deepswe": {
+        "bad_rate": 0.011764705882352941,
+        "fn_rate": 0,
+        "fp_rate": 0.011764705882352941,
+        "n_bad": 1,
+        "n_false_negative": 0,
+        "n_false_positive": 1,
+        "n_reviewed": 85,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 14,
+          "FAIL_KNOWLEDGE_GAP": 1,
+          "FAIL_MISSED_REQUIREMENT": 38,
+          "FAIL_REGRESSION": 15,
+          "FAIL_SYNTAX_ERROR": 8,
+          "FAIL_TEST_BROKEN": 1,
+          "FAIL_TRIAL_INCOMPLETE": 1,
+          "FAIL_UNVERIFIED_ASSUMPTION": 1,
+          "FAIL_WRONG_FILE": 1,
+          "FAIL_WRONG_LOGIC": 1,
+          "PASS_LEGITIMATE": 4
+        }
+      },
+      "model": "gemini-3-flash-preview",
+      "pro": {
+        "bad_rate": 0.2597402597402597,
+        "fn_rate": 0.2077922077922078,
+        "fp_rate": 0.05194805194805195,
+        "n_bad": 20,
+        "n_false_negative": 16,
+        "n_false_positive": 4,
+        "n_reviewed": 77,
+        "tags": {
+          "FAIL_AMBIGUOUS_TASK": 1,
+          "FAIL_INTEGRATION_ERROR": 5,
+          "FAIL_MISSED_REQUIREMENT": 16,
+          "FAIL_REGRESSION": 5,
+          "FAIL_SYNTAX_ERROR": 2,
+          "FAIL_TEST_BROKEN": 4,
+          "FAIL_TEST_MISMATCH": 5,
+          "FAIL_UNVERIFIED_ASSUMPTION": 2,
+          "PASS_CHEATED": 1,
+          "PASS_LEGITIMATE": 36
+        }
+      }
+    },
+    {
+      "deepswe": {
+        "bad_rate": 0.011111111111111112,
+        "fn_rate": 0.011111111111111112,
+        "fp_rate": 0,
+        "n_bad": 1,
+        "n_false_negative": 1,
+        "n_false_positive": 0,
+        "n_reviewed": 90,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 14,
+          "FAIL_KNOWLEDGE_GAP": 1,
+          "FAIL_MISSED_REQUIREMENT": 55,
+          "FAIL_REGRESSION": 4,
+          "FAIL_SYNTAX_ERROR": 6,
+          "FAIL_UNVERIFIED_ASSUMPTION": 2,
+          "FAIL_WRONG_FILE": 5,
+          "FAIL_WRONG_LOGIC": 3
+        }
+      },
+      "model": "claude-haiku-4-5",
+      "pro": {
+        "bad_rate": 0.2777777777777778,
+        "fn_rate": 0.2,
+        "fp_rate": 0.07777777777777778,
+        "n_bad": 25,
+        "n_false_negative": 18,
+        "n_false_positive": 7,
+        "n_reviewed": 90,
+        "tags": {
+          "FAIL_AMBIGUOUS_TASK": 2,
+          "FAIL_INTEGRATION_ERROR": 7,
+          "FAIL_MISSED_REQUIREMENT": 30,
+          "FAIL_MISUNDERSTOOD_TASK": 1,
+          "FAIL_REGRESSION": 1,
+          "FAIL_TEST_BROKEN": 6,
+          "FAIL_TEST_MISMATCH": 7,
+          "PASS_CHEATED": 2,
+          "PASS_LEGITIMATE": 34
+        }
+      }
+    },
+    {
+      "deepswe": {
+        "bad_rate": 0,
+        "fn_rate": 0,
+        "fp_rate": 0,
+        "n_bad": 0,
+        "n_false_negative": 0,
+        "n_false_positive": 0,
+        "n_reviewed": 80,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 8,
+          "FAIL_MISSED_REQUIREMENT": 50,
+          "FAIL_REGRESSION": 3,
+          "FAIL_UNVERIFIED_ASSUMPTION": 1,
+          "PASS_LEGITIMATE": 18
+        }
+      },
+      "model": "claude-sonnet-4-6",
+      "pro": {
+        "bad_rate": 0.34444444444444444,
+        "fn_rate": 0.23333333333333334,
+        "fp_rate": 0.1111111111111111,
+        "n_bad": 31,
+        "n_false_negative": 21,
+        "n_false_positive": 10,
+        "n_reviewed": 90,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 4,
+          "FAIL_MISSED_REQUIREMENT": 18,
+          "FAIL_MISUNDERSTOOD_TASK": 1,
+          "FAIL_TEST_BROKEN": 6,
+          "FAIL_TEST_MISMATCH": 14,
+          "PASS_CHEATED": 6,
+          "PASS_LEGITIMATE": 41
+        }
+      }
+    },
+    {
+      "deepswe": {
+        "bad_rate": 0,
+        "fn_rate": 0,
+        "fp_rate": 0,
+        "n_bad": 0,
+        "n_false_negative": 0,
+        "n_false_positive": 0,
+        "n_reviewed": 83,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 21,
+          "FAIL_KNOWLEDGE_GAP": 1,
+          "FAIL_MISSED_REQUIREMENT": 37,
+          "FAIL_REGRESSION": 13,
+          "FAIL_SYNTAX_ERROR": 5,
+          "FAIL_WRONG_LOGIC": 1,
+          "PASS_LEGITIMATE": 5
+        }
+      },
+      "model": "gemini-3-1-pro-preview",
+      "pro": {
+        "bad_rate": 0.32222222222222224,
+        "fn_rate": 0.25555555555555554,
+        "fp_rate": 0.06666666666666667,
+        "n_bad": 29,
+        "n_false_negative": 23,
+        "n_false_positive": 6,
+        "n_reviewed": 90,
+        "tags": {
+          "FAIL_AMBIGUOUS_TASK": 1,
+          "FAIL_INTEGRATION_ERROR": 10,
+          "FAIL_MISSED_REQUIREMENT": 15,
+          "FAIL_REGRESSION": 3,
+          "FAIL_TEST_BROKEN": 9,
+          "FAIL_TEST_MISMATCH": 12,
+          "PASS_CHEATED": 1,
+          "PASS_LEGITIMATE": 39
+        }
+      }
+    },
+    {
+      "deepswe": {
+        "bad_rate": 0,
+        "fn_rate": 0,
+        "fp_rate": 0,
+        "n_bad": 0,
+        "n_false_negative": 0,
+        "n_false_positive": 0,
+        "n_reviewed": 47,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 3,
+          "FAIL_MISSED_REQUIREMENT": 23,
+          "FAIL_REGRESSION": 1,
+          "FAIL_UNVERIFIED_ASSUMPTION": 1,
+          "FAIL_WRONG_FILE": 1,
+          "FAIL_WRONG_LOGIC": 3,
+          "PASS_LEGITIMATE": 15
+        }
+      },
+      "model": "gpt-5-4-mini",
+      "pro": {
+        "bad_rate": 0.32941176470588235,
+        "fn_rate": 0.27058823529411763,
+        "fp_rate": 0.058823529411764705,
+        "n_bad": 28,
+        "n_false_negative": 23,
+        "n_false_positive": 5,
+        "n_reviewed": 85,
+        "tags": {
+          "FAIL_EXECUTION_ERROR_EXTERNAL": 1,
+          "FAIL_INTEGRATION_ERROR": 4,
+          "FAIL_MISSED_REQUIREMENT": 7,
+          "FAIL_REGRESSION": 3,
+          "FAIL_TEST_BROKEN": 6,
+          "FAIL_TEST_MISMATCH": 16,
+          "FAIL_UNVERIFIED_ASSUMPTION": 1,
+          "FAIL_WRONG_LOGIC": 2,
+          "PASS_CHEATED": 3,
+          "PASS_LEGITIMATE": 42
+        }
+      }
+    },
+    {
+      "deepswe": {
+        "bad_rate": 0,
+        "fn_rate": 0,
+        "fp_rate": 0,
+        "n_bad": 0,
+        "n_false_negative": 0,
+        "n_false_positive": 0,
+        "n_reviewed": 90,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 3,
+          "FAIL_MISSED_REQUIREMENT": 15,
+          "FAIL_REGRESSION": 1,
+          "FAIL_UNVERIFIED_ASSUMPTION": 2,
+          "FAIL_WRONG_LOGIC": 1,
+          "PASS_LEGITIMATE": 68
+        }
+      },
+      "model": "gpt-5-5",
+      "pro": {
+        "bad_rate": 0.3,
+        "fn_rate": 0.28888888888888886,
+        "fp_rate": 0.011111111111111112,
+        "n_bad": 27,
+        "n_false_negative": 26,
+        "n_false_positive": 1,
+        "n_reviewed": 90,
+        "tags": {
+          "FAIL_INTEGRATION_ERROR": 3,
+          "FAIL_MISSED_REQUIREMENT": 5,
+          "FAIL_REGRESSION": 4,
+          "FAIL_TEST_BROKEN": 5,
+          "FAIL_TEST_MISMATCH": 21,
+          "PASS_LEGITIMATE": 52
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "bad_rate": 0.24705882352941178,
+      "model": "claude-opus-4-6",
+      "n_bad": 42,
+      "n_reviewed": 170
+    },
+    {
+      "bad_rate": 0.21212121212121213,
+      "model": "gpt-5-4-mini",
+      "n_bad": 28,
+      "n_reviewed": 132
+    },
+    {
+      "bad_rate": 0.18333333333333332,
+      "model": "gpt-5-4",
+      "n_bad": 33,
+      "n_reviewed": 180
+    },
+    {
+      "bad_rate": 0.18235294117647058,
+      "model": "claude-sonnet-4-6",
+      "n_bad": 31,
+      "n_reviewed": 170
+    },
+    {
+      "bad_rate": 0.1676300578034682,
+      "model": "gemini-3-1-pro-preview",
+      "n_bad": 29,
+      "n_reviewed": 173
+    },
+    {
+      "bad_rate": 0.1638418079096045,
+      "model": "claude-opus-4-7",
+      "n_bad": 29,
+      "n_reviewed": 177
+    },
+    {
+      "bad_rate": 0.15,
+      "model": "gpt-5-5",
+      "n_bad": 27,
+      "n_reviewed": 180
+    },
+    {
+      "bad_rate": 0.14444444444444443,
+      "model": "claude-haiku-4-5",
+      "n_bad": 26,
+      "n_reviewed": 180
+    },
+    {
+      "bad_rate": 0.12962962962962962,
+      "model": "gemini-3-flash-preview",
+      "n_bad": 21,
+      "n_reviewed": 162
+    }
+  ],
+  "scope": "Critique pass: false-positive / false-negative rates of the verifier, per model and benchmark",
+  "unit": "fp_rate = passed-but-bad / n_reviewed; fn_rate = failed-but-good / n_reviewed"
+}

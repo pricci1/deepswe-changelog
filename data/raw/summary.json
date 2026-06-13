@@ -1,0 +1,10 @@
+{
+  "counts": {
+    "repositories": 91,
+    "rollout_attempts": 7232,
+    "tasks": 113,
+    "trials": 8852
+  },
+  "generated_at": "2026-05-20T19:36:27.671905+00:00",
+  "name": "DeepSWE"
+}
