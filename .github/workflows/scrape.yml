@@ -35,14 +35,35 @@ jobs:
           bun run validate
 
       - name: Commit changes
+        id: commit-changes
         run: |
           if [ -z "$(git status --porcelain -- README.md data)" ]; then
             echo "No DeepSWE benchmark changes detected."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+
+          release_timestamp="$(date -u +'%Y%m%d%H%M%S')"
+          release_title="DeepSWE benchmark update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          tag_name="deepswe-${release_timestamp}"
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md data
           git commit -m "Update DeepSWE benchmark results"
+          git tag -a "$tag_name" -m "$release_title"
           git push
+          git push origin "$tag_name"
+
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "tag_name=$tag_name" >> "$GITHUB_OUTPUT"
+          echo "release_title=$release_title" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub release
+        if: steps.commit-changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${{ steps.commit-changes.outputs.tag_name }}" \
+            --title "${{ steps.commit-changes.outputs.release_title }}" \
+            --notes "Updated DeepSWE benchmark data and README.md from the latest scrape."
