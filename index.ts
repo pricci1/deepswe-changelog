@@ -213,6 +213,16 @@ function renderMainReadme(artifacts: Map<string, JsonObject>): string {
     "",
     "A scheduled GitHub workflow runs `bun run scrape`, normalizes the public artifact JSON, and commits only when result data changes.",
     "",
+    "## Charts",
+    "",
+    "### DeepSWE score vs average cost",
+    "",
+    renderEfficiencyChart(leaderboard),
+    "",
+    "### pass@1 leaderboard",
+    "",
+    renderPassAt1Chart(leaderboard),
+    "",
     "## Leaderboard",
     "",
     renderTable(leaderboard, [
@@ -230,6 +240,84 @@ function renderMainReadme(artifacts: Map<string, JsonObject>): string {
     "See [the full generated data report](data/README.md) for comparisons, model behavior aggregates, verification behavior, critiques, corpus stats, repositories, and raw snapshot links.",
     "",
   ].join("\n");
+}
+
+type LeaderboardPoint = {
+  label: string;
+  passAt1: number;
+  cost: number;
+};
+
+function renderEfficiencyChart(rows: Row[]): string {
+  const points = getLeaderboardPoints(rows);
+  if (points.length === 0) {
+    return "_No chart data published._";
+  }
+
+  const maxCost = Math.max(...points.map((point) => point.cost));
+
+  return [
+    "```mermaid",
+    "quadrantChart",
+    "    title DeepSWE score vs average cost per task",
+    "    x-axis Higher avg cost --> Lower avg cost",
+    "    y-axis Lower pass@1 --> Higher pass@1",
+    "    quadrant-1 Most efficient",
+    "    quadrant-2 Higher score / higher cost",
+    "    quadrant-3 Lower score / higher cost",
+    "    quadrant-4 Lower score / lower cost",
+    ...points.map((point) => `    ${toMermaidPointLabel(point.label)}: [${formatChartNumber(1 - point.cost / maxCost)}, ${formatChartNumber(point.passAt1)}]`),
+    "```",
+  ].join("\n");
+}
+
+function renderPassAt1Chart(rows: Row[]): string {
+  const points = getLeaderboardPoints(rows);
+  if (points.length === 0) {
+    return "_No chart data published._";
+  }
+
+  const maxPercent = Math.max(80, Math.ceil(Math.max(...points.map((point) => point.passAt1 * 100)) / 10) * 10);
+
+  return [
+    "```mermaid",
+    "xychart-beta",
+    "    title \"DeepSWE pass@1 leaderboard\"",
+    `    x-axis [${points.map((point) => `\"${escapeMermaidString(point.label)}\"`).join(", ")}]`,
+    `    y-axis "pass@1 (%)" 0 --> ${maxPercent}`,
+    `    bar [${points.map((point) => (point.passAt1 * 100).toFixed(1)).join(", ")}]`,
+    "```",
+  ].join("\n");
+}
+
+function getLeaderboardPoints(rows: Row[]): LeaderboardPoint[] {
+  return rows.flatMap((row) => {
+    const model = typeof row.model === "string" ? row.model : null;
+    const effort = typeof row.reasoning_efforts === "string" ? row.reasoning_efforts : null;
+    const passAt1 = getNumber(row.pass_at_1);
+    const cost = getNumber(row.median_cost_usd);
+    if (!model || passAt1 === null || cost === null) {
+      return [];
+    }
+
+    return [{ label: effort ? `${model} [${effort}]` : model, passAt1, cost }];
+  });
+}
+
+function getNumber(value: JsonValue | undefined): number | null {
+  return typeof value === "number" && Number.isFinite(value) ? value : null;
+}
+
+function toMermaidPointLabel(label: string): string {
+  return label.replace(/[\[\]:,;]/g, "").replaceAll("]", "");
+}
+
+function escapeMermaidString(label: string): string {
+  return label.replaceAll("\\", "\\\\").replaceAll("\"", "\\\"");
+}
+
+function formatChartNumber(value: number): string {
+  return value.toFixed(3).replace(/0+$/, "").replace(/\.$/, "");
 }
 
 type Row = Record<string, JsonValue | undefined>;
