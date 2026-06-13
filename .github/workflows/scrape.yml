@@ -24,6 +24,9 @@ jobs:
       - name: Scrape published artifacts
         run: bun run scrape
 
+      - name: Validate generated Mermaid diagrams
+        run: bun run validate
+
       - name: Commit changes
         run: |
           if [ -z "$(git status --porcelain -- README.md data)" ]; then

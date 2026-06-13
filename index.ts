@@ -261,7 +261,7 @@ function renderEfficiencyChart(rows: Row[]): string {
     "quadrantChart",
     "    title DeepSWE score vs average cost per task",
     "    x-axis Higher avg cost --> Lower avg cost",
-    "    y-axis Lower pass@1 --> Higher pass@1",
+    "    y-axis Lower pass at 1 --> Higher pass at 1",
     "    quadrant-1 Most efficient",
     "    quadrant-2 Higher score / higher cost",
     "    quadrant-3 Lower score / higher cost",
@@ -284,7 +284,7 @@ function renderPassAt1Chart(rows: Row[]): string {
     "xychart-beta",
     "    title \"DeepSWE pass@1 leaderboard\"",
     `    x-axis [${points.map((point) => `\"${escapeMermaidString(point.label)}\"`).join(", ")}]`,
-    `    y-axis "pass@1 (%)" 0 --> ${maxPercent}`,
+    `    y-axis "pass at 1 (%)" 0 --> ${maxPercent}`,
     `    bar [${points.map((point) => (point.passAt1 * 100).toFixed(1)).join(", ")}]`,
     "```",
   ].join("\n");

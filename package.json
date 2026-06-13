@@ -4,10 +4,13 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "scrape": "bun index.ts"
+    "scrape": "bun index.ts",
+    "validate": "bun scripts/validate-mermaid.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "happy-dom": "^20.10.3",
+    "mermaid": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"

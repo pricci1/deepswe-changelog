@@ -14,7 +14,7 @@ A scheduled GitHub workflow runs `bun run scrape`, normalizes the public artifac
 quadrantChart
     title DeepSWE score vs average cost per task
     x-axis Higher avg cost --> Lower avg cost
-    y-axis Lower pass@1 --> Higher pass@1
+    y-axis Lower pass at 1 --> Higher pass at 1
     quadrant-1 Most efficient
     quadrant-2 Higher score / higher cost
     quadrant-3 Lower score / higher cost
@@ -43,7 +43,7 @@ quadrantChart
 xychart-beta
     title "DeepSWE pass@1 leaderboard"
     x-axis ["gpt-5-5 [xhigh]", "gpt-5-4 [xhigh]", "claude-opus-4-7 [max]", "claude-sonnet-4-6 [high]", "gemini-3-5-flash [medium]", "claude-opus-4-6 [max]", "gpt-5-4-mini [xhigh]", "kimi-k2-6", "mimo-v2-5-pro", "glm-5-1", "gemini-3-1-pro-preview", "deepseek-v4-pro", "gemini-3-flash-preview", "qwen3-6-plus", "claude-haiku-4-5", "minimax-m2-7"]
-    y-axis "pass@1 (%)" 0 --> 80
+    y-axis "pass at 1 (%)" 0 --> 80
     bar [70.0, 55.5, 54.2, 31.6, 28.3, 27.1, 24.3, 23.9, 19.5, 17.5, 9.9, 7.5, 5.2, 2.7, 0.2, 0.2]
 ```
 
