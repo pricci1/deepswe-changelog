@@ -18,6 +18,7 @@ type JsonObject = { [key: string]: JsonValue };
 
 const RAW_DIR = "data/raw";
 const REPORT_PATH = "data/README.md";
+const MAIN_README_PATH = "README.md";
 const IGNORED_TOP_LEVEL_KEYS = new Set([
   "scope",
   "unit",
@@ -49,6 +50,7 @@ async function main() {
   }
 
   await Bun.write(REPORT_PATH, renderReport(artifacts));
+  await Bun.write(MAIN_README_PATH, renderMainReadme(artifacts));
 }
 
 function stableStringify(value: JsonValue): string {
@@ -113,7 +115,11 @@ function renderReport(artifacts: Map<string, JsonObject>): string {
     "The scraper writes stable JSON snapshots in `data/raw/` and this compact report so normal git diffs show upstream benchmark changes.",
     "Descriptive metadata and other noisy non-result fields are intentionally omitted before writing files.",
     "",
-    `Source: ${BASE_URL}`,
+    "## Original source",
+    "",
+    "DeepSWE is published by DataCurve at [deepswe.datacurve.ai](https://deepswe.datacurve.ai). Please visit the original site for the canonical benchmark presentation and context.",
+    "",
+    `Artifact JSON source: ${BASE_URL}`,
     "",
     "## Summary",
     "",
@@ -191,6 +197,37 @@ function renderReport(artifacts: Map<string, JsonObject>): string {
       ["n_tasks", "Tasks"],
       ["n_files", "Files"],
     ]),
+    "",
+  ].join("\n");
+}
+
+function renderMainReadme(artifacts: Map<string, JsonObject>): string {
+  const leaderboard = getRows(getArtifact(artifacts, "leaderboard"));
+
+  return [
+    "# DeepSWE changelog",
+    "",
+    "This repository tracks changes to the published DeepSWE benchmark results.",
+    "",
+    "> **Original source:** DeepSWE is published by DataCurve at [deepswe.datacurve.ai](https://deepswe.datacurve.ai). Please visit the original site for the canonical benchmark presentation and context.",
+    "",
+    "A scheduled GitHub workflow runs `bun run scrape`, normalizes the public artifact JSON, and commits only when result data changes.",
+    "",
+    "## Leaderboard",
+    "",
+    renderTable(leaderboard, [
+      ["model", "Model"],
+      ["config", "Config"],
+      ["pass_at_1", "pass@1", formatPercent],
+      ["pass_at_4", "pass@4", formatPercent],
+      ["n_passed", "Passed"],
+      ["n_attempted", "Attempts"],
+      ["n_tasks_attempted", "Tasks"],
+      ["median_cost_usd", "Median cost", formatUsd],
+      ["median_steps", "Median steps"],
+    ]),
+    "",
+    "See [the full generated data report](data/README.md) for comparisons, model behavior aggregates, verification behavior, critiques, corpus stats, repositories, and raw snapshot links.",
     "",
   ].join("\n");
 }
