@@ -24,8 +24,15 @@ jobs:
       - name: Scrape published artifacts
         run: bun run scrape
 
-      - name: Validate generated Mermaid diagrams
-        run: bun run validate
+      - name: Validate generated Mermaid diagrams best-effort
+        run: |
+          if bun run validate; then
+            exit 0
+          fi
+
+          echo "Mermaid validation failed; regenerating README.md without charts."
+          OMIT_MERMAID=1 bun run scrape
+          bun run validate
 
       - name: Commit changes
         run: |

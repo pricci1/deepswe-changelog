@@ -19,6 +19,7 @@ type JsonObject = { [key: string]: JsonValue };
 const RAW_DIR = "data/raw";
 const REPORT_PATH = "data/README.md";
 const MAIN_README_PATH = "README.md";
+const OMIT_MERMAID = process.env.OMIT_MERMAID === "1";
 const IGNORED_TOP_LEVEL_KEYS = new Set([
   "scope",
   "unit",
@@ -213,6 +214,10 @@ function renderMainReadme(artifacts: Map<string, JsonObject>): string {
     "",
     "A scheduled GitHub workflow runs `bun run scrape`, normalizes the public artifact JSON, and commits only when result data changes.",
     "",
+    ...(OMIT_MERMAID ? [
+      "_Generated Mermaid charts are temporarily omitted because chart validation failed in the scheduled workflow._",
+      "",
+    ] : [
     "## Charts",
     "",
     "### DeepSWE score vs average cost",
@@ -223,6 +228,7 @@ function renderMainReadme(artifacts: Map<string, JsonObject>): string {
     "",
     renderPassAt1Chart(leaderboard),
     "",
+    ]),
     "## Leaderboard",
     "",
     renderTable(leaderboard, [
