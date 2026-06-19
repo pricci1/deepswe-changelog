@@ -1,0 +1,12 @@
+{
+  "artifact_base_url": "https://d3ujjcmjq6o8v6.cloudfront.net",
+  "artifact_key_prefix": "v1.1/trial-artifacts",
+  "artifact_patterns": {
+    "agent_log": "v1.1/trial-artifacts/{trial_name}/agent/mini-swe-agent.txt",
+    "model_patch": "v1.1/trial-artifacts/{trial_name}/artifacts/model.patch",
+    "trajectory": "v1.1/trial-artifacts/{trial_name}/agent/trajectory.json",
+    "verifier_file": "v1.1/trial-artifacts/{trial_name}/verifier/{file}",
+    "verifier_output": "v1.1/trial-artifacts/{trial_name}/verifier/test-stdout.txt"
+  },
+  "release_id": "v1.1"
+}

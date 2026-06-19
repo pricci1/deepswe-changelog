@@ -1,9 +1,0 @@
-{
-  "counts": {
-    "repositories": 91,
-    "rollout_attempts": 7232,
-    "tasks": 113,
-    "trials": 8852
-  },
-  "name": "DeepSWE"
-}

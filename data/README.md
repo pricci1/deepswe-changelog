@@ -8,150 +8,78 @@ Descriptive metadata and other noisy non-result fields are intentionally omitted
 
 DeepSWE is published by DataCurve at [deepswe.datacurve.ai](https://deepswe.datacurve.ai). Please visit the original site for the canonical benchmark presentation and context.
 
-Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1
+Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1.1
 
-## Summary
+## Release
 
 | Metric | Value |
 | --- | --- |
+| release_id | v1.1 |
 | tasks | 113 |
-| repositories | 91 |
-| rollout_attempts | 7,232 |
-| trials | 8,852 |
+| trials | 8,588 |
+| compared_to | v1 |
+| shared_configs | 10 |
 
 ## Leaderboard
 
-| Model | Config | pass@1 | pass@4 | Passed | Attempts | Tasks | Median cost | Median steps |
+| Model | Config | Effort | Pass@1 | Passed | Attempts | Avg cost | Avg output tokens | Avg steps |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | 70.0% | 88.3% | 311 | 444 | 111 | $5.76 | 75 |
-| gpt-5-4 | mini_swe_agent_gpt_5_4_xhigh | 55.5% | 77.0% | 251 | 452 | 113 | $3.31 | 62 |
-| claude-opus-4-7 | mini_swe_agent_claude_opus_4_7_max | 54.2% | 85.8% | 245 | 452 | 113 | $15.95 | 191 |
-| claude-sonnet-4-6 | mini_swe_agent_claude_sonnet_4_6_high | 31.6% | 61.9% | 142 | 447 | 113 | $4.75 | 121 |
-| gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | 28.3% | 56.6% | 128 | 452 | 113 | $5.67 | 71 |
-| claude-opus-4-6 | mini_swe_agent_claude_opus_4_6_max | 27.1% | 50.4% | 122 | 442 | 113 | $4.66 | 94 |
-| gpt-5-4-mini | mini_swe_agent_gpt_5_4_mini_xhigh | 24.3% | 46.0% | 110 | 452 | 113 | $2.03 | 83 |
-| kimi-k2-6 | mini_swe_agent_kimi_k2_6_default | 23.9% | 48.7% | 108 | 452 | 113 | $2.70 | 136.5 |
-| mimo-v2-5-pro | mini_swe_agent_mimo_v2_5_pro_default | 19.5% | 45.1% | 88 | 452 | 113 | $1.68 | 114.5 |
-| glm-5-1 | mini_swe_agent_glm_5_1_default | 17.5% | 38.9% | 79 | 451 | 113 | $6.70 | 168 |
-| gemini-3-1-pro-preview | mini_swe_agent_gemini_3_1_pro_preview_default | 9.9% | 24.8% | 43 | 442 | 113 | $1.52 | 67 |
-| deepseek-v4-pro | mini_swe_agent_deepseek_v4_pro_default | 7.5% | 18.6% | 34 | 452 | 113 | $3.54 | 103.5 |
-| gemini-3-flash-preview | mini_swe_agent_gemini_3_flash_preview_default | 5.2% | 15.0% | 22 | 428 | 113 | $1.04 | 54 |
-| qwen3-6-plus | mini_swe_agent_qwen3_6_plus_default | 2.7% | 9.7% | 12 | 452 | 113 | $3.61 | 158 |
-| claude-haiku-4-5 | mini_swe_agent_claude_haiku_4_5_default | 0.2% | 0.9% | 1 | 452 | 113 | $0.78 | 103 |
-| minimax-m2-7 | mini_swe_agent_minimax_m2_7_default | 0.2% | 0.9% | 1 | 452 | 113 | $0.54 | 116 |
+| claude-fable-5 | mini_swe_agent_claude_fable_5_xhigh | xhigh | 69.9% | 316 | 452 | $13.41 | 80,352.17 | 68.4 |
+| claude-fable-5 | mini_swe_agent_claude_fable_5_max | max | 69.7% | 304 | 436 | $21.63 | 118,592.77 | 88.43 |
+| claude-fable-5 | mini_swe_agent_claude_fable_5_high | high | 68.6% | 295 | 430 | $9.18 | 57,287.07 | 58.74 |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | xhigh | 67.0% | 303 | 452 | $7.23 | 46,294.72 | 82.02 |
+| claude-fable-5 | mini_swe_agent_claude_fable_5_medium | medium | 65.4% | 285 | 436 | $6.09 | 40,201.35 | 48.37 |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_high | high | 64.4% | 291 | 452 | $5.10 | 31,159.5 | 61.92 |
+| claude-fable-5 | mini_swe_agent_claude_fable_5_low | low | 59.6% | 258 | 433 | $3.76 | 25,242.83 | 37.8 |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_max | max | 59.0% | 253 | 429 | $13.22 | 135,031.67 | 120 |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_xhigh | xhigh | 54.4% | 243 | 447 | $8.01 | 86,088.79 | 94.64 |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_medium | medium | 54.0% | 244 | 452 | $2.75 | 19,625.43 | 45.98 |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_high | high | 51.8% | 234 | 452 | $4.28 | 50,063.53 | 72.5 |
+| gpt-5-4 | mini_swe_agent_gpt_5_4_xhigh | xhigh | 51.8% | 234 | 452 | $5.65 | 71,408.87 | 70.47 |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_medium | medium | 48.7% | 220 | 452 | $3.44 | 41,313.45 | 65.57 |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_low | low | 40.8% | 184 | 451 | $2.29 | 28,922.74 | 53.98 |
+| gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | medium | 37.4% | 169 | 452 | $7.34 | 275,777.51 | 85.72 |
+| kimi-k2-7-code | mini_swe_agent_kimi_k2_7_code_default |  | 30.5% | 138 | 452 | $2.82 | 59,297.25 | 149.12 |
+| claude-sonnet-4-6 | mini_swe_agent_claude_sonnet_4_6_high | high | 29.9% | 135 | 451 | $5.52 | 76,160.31 | 133.66 |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_low | low | 27.0% | 122 | 452 | $1.20 | 9,442.77 | 28.07 |
+| gemini-3-1-pro-preview | mini_swe_agent_gemini_3_1_pro_preview_high | high | 11.8% | 53 | 451 | $9.48 | 196,386.1 | 81.39 |
 
-## DeepSWE vs SWE-Bench Pro
+## v1.1 delta vs v1
 
-| Model | DeepSWE | SWE-Bench Pro |
-| --- | --- | --- |
-| gpt-5-5 | 70.0% | 58.6% |
-| claude-opus-4-7 | 54.2% | 64.3% |
-| gpt-5-4 | 55.5% | 57.7% |
-| claude-sonnet-4-6 | 32.0% | 54.4% |
-| gpt-5-4-mini | 24.3% | 54.4% |
-| gemini-3-1-pro-preview | 9.9% | 46.1% |
-| gemini-3-flash-preview | 5.2% | 34.6% |
-| claude-haiku-4-5 | 0.2% | 39.5% |
+| Model | Config | v1.1 | v1 | Delta |
+| --- | --- | --- | --- | --- |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | 67.0% | 70.0% | -3.0% |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_high | 64.4% | 62.0% | 2.4% |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_max | 59.0% | 58.2% | 0.8% |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_xhigh | 54.4% | 57.7% | -3.4% |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_medium | 54.0% | 48.0% | 6.0% |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_high | 51.8% | 50.7% | 1.1% |
+| gpt-5-4 | mini_swe_agent_gpt_5_4_xhigh | 51.8% | 55.5% | -3.8% |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_medium | 48.7% | 47.3% | 1.3% |
+| gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | 37.4% | 28.3% | 9.1% |
+| claude-sonnet-4-6 | mini_swe_agent_claude_sonnet_4_6_high | 29.9% | 31.8% | -1.8% |
 
-## Per-model behavior aggregates
+## Task coverage
 
-| Model | Config | Pass rate | Passed | Tasks | Trials | Median duration | Median steps | Critique bad rate |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | 70.0% | 311 | 111 | 444 | 1,222.62s | 75 | 15.0% |
-| gpt-5-4 | mini_swe_agent_gpt_5_4_xhigh | 55.5% | 251 | 113 | 452 | 1,424.77s | 62 | 18.3% |
-| claude-opus-4-7 | mini_swe_agent_claude_opus_4_7_max | 54.2% | 245 | 113 | 452 | 2,208.33s | 191 | 16.4% |
-| claude-sonnet-4-6 | mini_swe_agent_claude_sonnet_4_6_high | 31.8% | 142 | 113 | 447 | 2,128.49s | 121 | 18.2% |
-| gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | 28.3% | 128 | 113 | 452 | 922.42s | 71 |  |
-| claude-opus-4-6 | mini_swe_agent_claude_opus_4_6_max | 27.6% | 122 | 113 | 442 | 1,366.08s | 94 | 24.7% |
-| gpt-5-4-mini | mini_swe_agent_gpt_5_4_mini_xhigh | 24.3% | 110 | 113 | 452 | 1,838.86s | 83 | 21.2% |
-| kimi-k2-6 | mini_swe_agent_kimi_k2_6_default | 23.9% | 108 | 113 | 452 | 3,292.74s | 136.5 |  |
-| mimo-v2-5-pro | mini_swe_agent_mimo_v2_5_pro_default | 19.5% | 88 | 113 | 452 | 1,575.62s | 114.5 |  |
-| glm-5-1 | mini_swe_agent_glm_5_1_default | 17.5% | 79 | 113 | 451 | 1,963.39s | 168 |  |
-| gemini-3-1-pro-preview | mini_swe_agent_gemini_3_1_pro_preview_default | 9.7% | 43 | 113 | 442 | 890.48s | 67 | 16.8% |
-| deepseek-v4-pro | mini_swe_agent_deepseek_v4_pro_default | 7.5% | 34 | 113 | 452 | 2,119.91s | 103.5 |  |
-| gemini-3-flash-preview | mini_swe_agent_gemini_3_flash_preview_default | 5.1% | 22 | 113 | 428 | 2,222.3s | 54 | 13.0% |
-| qwen3-6-plus | mini_swe_agent_qwen3_6_plus_default | 2.7% | 12 | 113 | 452 | 1,973.15s | 158 |  |
-| claude-haiku-4-5 | mini_swe_agent_claude_haiku_4_5_default | 0.2% | 1 | 113 | 452 | 586.65s | 103 | 14.4% |
-| minimax-m2-7 | mini_swe_agent_minimax_m2_7_default | 0.2% | 1 | 113 | 452 | 1,921.94s | 116 |  |
-
-## Verification behavior
-
-| Model | Source | Trials | Authored tests | Ran suite | Repro only | Nothing | Unknown |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| claude-opus-4-7 | deep-swe | 540 | 449 | 91 | 0 | 0 | 0 |
-| claude-opus-4-6 | deep-swe | 542 | 360 | 169 | 2 | 11 | 0 |
-| claude-sonnet-4-6 | deep-swe | 542 | 367 | 166 | 1 | 8 | 0 |
-| claude-haiku-4-5 | deep-swe | 542 | 264 | 177 | 76 | 25 | 0 |
-| gpt-5-5 | deep-swe | 542 | 363 | 164 | 7 | 6 | 2 |
-| gpt-5-4 | deep-swe | 542 | 462 | 73 | 5 | 2 | 0 |
-| gpt-5-4-mini | deep-swe | 541 | 274 | 121 | 57 | 89 | 0 |
-| gemini-3-1-pro-preview | deep-swe | 542 | 132 | 226 | 150 | 34 | 0 |
-| gemini-3-flash-preview | deep-swe | 542 | 183 | 72 | 191 | 96 | 0 |
-| claude-opus-4-7 | swebenchpro | 90 | 25 | 62 | 3 | 0 | 0 |
-| claude-opus-4-6 | swebenchpro | 90 | 10 | 78 | 2 | 0 | 0 |
-| claude-sonnet-4-6 | swebenchpro | 90 | 11 | 73 | 5 | 1 | 0 |
-| claude-haiku-4-5 | swebenchpro | 90 | 3 | 80 | 6 | 1 | 0 |
-| gpt-5-5 | swebenchpro | 90 | 21 | 56 | 13 | 0 | 0 |
-| gpt-5-4 | swebenchpro | 90 | 16 | 53 | 21 | 0 | 0 |
-| gpt-5-4-mini | swebenchpro | 90 | 15 | 47 | 27 | 1 | 0 |
-| gemini-3-1-pro-preview | swebenchpro | 90 | 5 | 65 | 12 | 8 | 0 |
-| gemini-3-flash-preview | swebenchpro | 90 | 13 | 18 | 39 | 20 | 0 |
-
-## Critiques
-
-| Dataset | Reviewed | Bad | Bad rate | False-positive rate | False-negative rate |
-| --- | --- | --- | --- | --- | --- |
-| deepswe | 735 | 10 | 1.4% | 0.3% | 1.1% |
-| pro | 789 | 256 | 32.4% | 8.5% | 24.0% |
-
-| Model | DeepSWE bad rate | DeepSWE FP | DeepSWE FN | SWE-Bench Pro bad rate | SWE-Bench Pro FP | SWE-Bench Pro FN |
-| --- | --- | --- | --- | --- | --- | --- |
-| claude-opus-4-6 | 5.0% | 0.0% | 5.0% | 42.2% | 22.2% | 20.0% |
-| claude-opus-4-7 | 2.2% | 0.0% | 2.2% | 31.0% | 13.8% | 17.2% |
-| gpt-5-4 | 2.2% | 1.1% | 1.1% | 34.4% | 2.2% | 32.2% |
-| gemini-3-flash-preview | 1.2% | 1.2% | 0.0% | 26.0% | 5.2% | 20.8% |
-| claude-haiku-4-5 | 1.1% | 0.0% | 1.1% | 27.8% | 7.8% | 20.0% |
-| claude-sonnet-4-6 | 0.0% | 0.0% | 0.0% | 34.4% | 11.1% | 23.3% |
-| gemini-3-1-pro-preview | 0.0% | 0.0% | 0.0% | 32.2% | 6.7% | 25.6% |
-| gpt-5-4-mini | 0.0% | 0.0% | 0.0% | 32.9% | 5.9% | 27.1% |
-| gpt-5-5 | 0.0% | 0.0% | 0.0% | 30.0% | 1.1% | 28.9% |
-
-## Corpus stats
-
-| Dataset | Tasks | Mean prompt chars | Median prompt chars | Mean patch lines | Median patch lines | Mean patch files | Median patch files |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| deep_swe | 113 | 2,158.1 | 1,975 | 668.1 | 612 | 7.41 | 6 |
-| swebenchpro | 731 | 4,613.9 | 4,219 | 120.3 | 63 | 5.07 | 4 |
-| swebenchverified | 500 | 1,699.7 | 1,185 | 9.9 | 4 | 1.25 | 1 |
-
-## Repository and task coverage
-
-| Metric | Value |
-| --- | --- |
-| tasks | 113 |
-| repositories | 91 |
-
-Top repositories by task count:
-
-| Repository | Language | Tasks | Files |
+| Task | Repository | Language | Title |
 | --- | --- | --- | --- |
-| pmndrs/koota | TypeScript | 5 | 475 |
-| encode/httpx | Python | 3 | 125 |
-| PyCQA/bandit | Python | 3 | 298 |
-| platers/obsidian-linter | TypeScript | 3 | 320 |
-| fastapi/fastapi | Python | 2 | 2,988 |
-| prometheus/prometheus | TypeScript | 2 | 1,611 |
-| Textualize/textual | Python | 2 | 2,117 |
-| helm/helm | Go | 2 | 1,995 |
-| open-policy-agent/opa | Go | 2 | 7,468 |
-| capricorn86/happy-dom | TypeScript | 2 | 1,046 |
-| d5/tengo | Go | 2 | 119 |
-| celery/kombu | Python | 2 | 343 |
-| testem/testem | JavaScript | 2 | 485 |
-| dynamodb-toolbox/dynamodb-toolbox | TypeScript | 2 | 914 |
-| mattn/anko | Go | 2 | 142 |
-| abs-lang/abs | Go | 2 | 326 |
-| langchain-ai/langchain | Python | 1 | 2,882 |
-| TanStack/query | TypeScript | 1 | 2,343 |
-| slab/quill | TypeScript | 1 | 377 |
-| sharkdp/fd | Rust | 1 | 57 |
+| abs-module-cache-flags | abs-lang/abs | go | Harden module loading, cache introspection, and script flags |
+| abs-stepped-slices | abs-lang/abs | go | Add stepped slices for arrays and strings |
+| actionlint-action-pinning-lint | rhysd/actionlint | go | Add action pinning linting for actions and reusable workflows |
+| adaptix-name-mapping-aliases | reagento/adaptix | python | Add input key aliases to name mapping |
+| aiomonitor-task-snapshots-diff | aio-libs/aiomonitor | python | Add task snapshots, inspection, and diffing to aiomonitor |
+| anko-default-function-arguments | mattn/anko | go | Add default arguments to Anko function parameters |
+| anko-typed-variable-bindings | mattn/anko | go | Add typed variable bindings to Anko |
+| arcane-drift-detection-baselines | getarcaneapp/arcane | go | Add drift detection and compliance baselines |
+| arktype-json-schema-refs-dependencies | arktypeio/arktype | typescript | Add JSON Schema refs and dependency keywords |
+| awilix-async-container-initialization | jeffijoe/awilix | typescript | Add dependency-aware async initialization to the container |
+| bandit-incremental-cache-control | PyCQA/bandit | python | Add incremental cache controls to Bandit |
+| bandit-interprocedural-taint-checks | PyCQA/bandit | python | Add interprocedural taint checks for Bandit injection sinks |
+| bandit-structured-nosec-directives | PyCQA/bandit | python | Add structured nosec directives for regions and next line |
+| boa-hierarchical-evaluation-cancellation | boa-dev/boa | rust | Add hierarchical evaluation cancellation to Boa |
+| cattrs-partial-structuring-recovery | python-attrs/cattrs | python | Add partial structuring with error recovery to cattrs |
+| clack-async-autocomplete-options | bombshell-dev/clack | typescript | Add async autocomplete options and fetch lifecycle handling |
+| claude-code-by-agents-recursive-delegation | baryhuang/claude-code-by-agents | typescript | Implement recursive agent delegation through delegate_task tool calls |
+| cliffy-config-file-parsing | c4spar/cliffy | typescript | Add config file parsing to Cliffy commands |
+| csstree-shorthand-expansion-compression | csstree/csstree | javascript | Add shorthand expansion and compression to the lexer |
+| dasel-html-document-format | TomWright/dasel | go | Add HTML document format handling to Dasel |

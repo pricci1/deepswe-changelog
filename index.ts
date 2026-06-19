@@ -1,15 +1,11 @@
-const BASE_URL = "https://deepswe.datacurve.ai/artifacts/v1";
+const BASE_URL = "https://deepswe.datacurve.ai/artifacts/v1.1";
 
 const ARTIFACTS = [
-  "summary",
-  "leaderboard",
-  "comparison",
-  "analysis",
-  "critiques",
-  "corpus-stats",
-  "repositories",
-  "verification-behavior",
+  "leaderboard-live",
   "tasks",
+  "trials",
+  "release",
+  "v1-delta",
 ] as const;
 
 type Artifact = (typeof ARTIFACTS)[number];
@@ -32,6 +28,7 @@ const IGNORED_TOP_LEVEL_KEYS = new Set([
 
 async function main() {
   await Bun.$`mkdir -p ${RAW_DIR}`;
+  await Bun.$`rm -f ${RAW_DIR}/*.json`;
 
   const artifacts = new Map<string, JsonObject>();
 
@@ -63,16 +60,8 @@ function normalizeArtifact(artifact: Artifact, data: JsonObject): JsonObject {
     Object.entries(data).filter(([key]) => !IGNORED_TOP_LEVEL_KEYS.has(key)),
   ) as JsonObject;
 
-  if (artifact === "comparison") {
-    normalized.rows = getRows(normalized).map((row) => omitKeys(row, ["swebenchpro_source_url"]));
-  }
-
-  if (artifact === "leaderboard") {
-    normalized.rows = getRows(normalized).map((row) => omitKeys(row, ["ci_method", "selection_notes"]));
-  }
-
-  if (artifact === "repositories") {
-    normalized.repositories = getRows(normalized, "repositories").map((row) => omitKeys(row, ["description", "stars"]));
+  if (artifact === "leaderboard-live") {
+    normalized.rows = getRows(normalized).map((row) => omitKeys(row, ["harness"]));
   }
 
   return normalized;
@@ -99,15 +88,11 @@ function sortJson(value: JsonValue): JsonValue {
 }
 
 function renderReport(artifacts: Map<string, JsonObject>): string {
-  const summary = getArtifact(artifacts, "summary");
-  const leaderboard = getRows(getArtifact(artifacts, "leaderboard"));
-  const comparison = getRows(getArtifact(artifacts, "comparison"));
-  const analysis = getRows(getArtifact(artifacts, "analysis"));
-  const critiques = getArtifact(artifacts, "critiques");
-  const corpusStats = getArtifact(artifacts, "corpus-stats");
-  const repositories = getArtifact(artifacts, "repositories");
-  const verification = getRows(getArtifact(artifacts, "verification-behavior"));
+  const leaderboard = getRows(getArtifact(artifacts, "leaderboard-live"));
   const tasks = getArtifact(artifacts, "tasks");
+  const trials = getArtifact(artifacts, "trials");
+  const release = getArtifact(artifacts, "release");
+  const delta = getArtifact(artifacts, "v1-delta");
 
   return [
     "# DeepSWE published benchmark snapshot",
@@ -122,88 +107,54 @@ function renderReport(artifacts: Map<string, JsonObject>): string {
     "",
     `Artifact JSON source: ${BASE_URL}`,
     "",
-    "## Summary",
+    "## Release",
     "",
-    renderKeyValueTable(summary.counts && typeof summary.counts === "object" && !Array.isArray(summary.counts) ? summary.counts : {}),
+    renderKeyValueTable({
+      release_id: release.release_id ?? "v1.1",
+      tasks: tasks.n_tasks ?? getRows(tasks).length,
+      trials: trials.n_trials ?? getRows(trials).length,
+      compared_to: delta.compared_to ?? null,
+      shared_configs: delta.n_shared_configs ?? null,
+    }),
     "",
     "## Leaderboard",
     "",
     renderTable(leaderboard, [
       ["model", "Model"],
       ["config", "Config"],
-      ["pass_at_1", "pass@1", formatPercent],
-      ["pass_at_4", "pass@4", formatPercent],
+      ["reasoning_effort", "Effort"],
+      ["pass_rate", "Pass@1", formatPercent],
       ["n_passed", "Passed"],
       ["n_attempted", "Attempts"],
-      ["n_tasks_attempted", "Tasks"],
-      ["median_cost_usd", "Median cost", formatUsd],
-      ["median_steps", "Median steps"],
+      ["mean_cost_usd", "Avg cost", formatUsd],
+      ["mean_output_tokens", "Avg output tokens", formatNumber],
+      ["mean_agent_steps", "Avg steps", formatNumber],
     ]),
     "",
-    "## DeepSWE vs SWE-Bench Pro",
+    "## v1.1 delta vs v1",
     "",
-    renderTable(comparison, [
-      ["model", "Model"],
-      ["deep_swe_pass_rate", "DeepSWE", formatPercent],
-      ["swebenchpro_pass_rate", "SWE-Bench Pro", formatPercent],
-    ]),
-    "",
-    "## Per-model behavior aggregates",
-    "",
-    renderTable(analysis, [
+    renderTable(getRows(delta, "configs"), [
       ["model", "Model"],
       ["config", "Config"],
-      ["pass_rate", "Pass rate", formatPercent],
-      ["n_passed", "Passed"],
-      ["n_tasks_attempted", "Tasks"],
-      ["n_trials", "Trials"],
-      ["median_duration_seconds", "Median duration", formatSeconds],
-      ["median_agent_steps", "Median steps"],
-      ["critique_bad_rate", "Critique bad rate", formatPercent],
+      ["current", "v1.1", formatPercent],
+      ["v1", "v1", formatPercent],
+      ["delta", "Delta", formatPercent],
     ]),
     "",
-    "## Verification behavior",
+    "## Task coverage",
     "",
-    renderTable(verification, [
-      ["model", "Model"],
-      ["source", "Source"],
-      ["n", "Trials"],
-      ["authored_new_tests", "Authored tests"],
-      ["ran_preexisting_suite", "Ran suite"],
-      ["repro_script_only", "Repro only"],
-      ["nothing", "Nothing"],
-      ["unknown", "Unknown"],
-    ]),
-    "",
-    "## Critiques",
-    "",
-    renderCritiques(critiques),
-    "",
-    "## Corpus stats",
-    "",
-    renderCorpusStats(corpusStats),
-    "",
-    "## Repository and task coverage",
-    "",
-    renderKeyValueTable({
-      tasks: tasks.n_tasks ?? getRows(tasks).length,
-      repositories: repositories.n_repositories ?? null,
-    }),
-    "",
-    "Top repositories by task count:",
-    "",
-    renderTable(getRows(repositories, "repositories").slice(0, 20), [
-      ["name", "Repository"],
-      ["primary_language", "Language"],
-      ["n_tasks", "Tasks"],
-      ["n_files", "Files"],
+    renderTable(getRows(tasks).slice(0, 20), [
+      ["id", "Task"],
+      ["repository", "Repository"],
+      ["language", "Language"],
+      ["problem_title", "Title"],
     ]),
     "",
   ].join("\n");
 }
 
 function renderMainReadme(artifacts: Map<string, JsonObject>): string {
-  const leaderboard = getRows(getArtifact(artifacts, "leaderboard"));
+  const leaderboard = getRows(getArtifact(artifacts, "leaderboard-live"));
 
   return [
     "# DeepSWE changelog",
@@ -234,16 +185,15 @@ function renderMainReadme(artifacts: Map<string, JsonObject>): string {
     renderTable(leaderboard, [
       ["model", "Model"],
       ["config", "Config"],
-      ["pass_at_1", "pass@1", formatPercent],
-      ["pass_at_4", "pass@4", formatPercent],
+      ["reasoning_effort", "Effort"],
+      ["pass_rate", "Pass@1", formatPercent],
       ["n_passed", "Passed"],
       ["n_attempted", "Attempts"],
-      ["n_tasks_attempted", "Tasks"],
-      ["median_cost_usd", "Median cost", formatUsd],
-      ["median_steps", "Median steps"],
+      ["mean_cost_usd", "Avg cost", formatUsd],
+      ["mean_agent_steps", "Avg steps", formatNumber],
     ]),
     "",
-    "See [the full generated data report](data/README.md) for comparisons, model behavior aggregates, verification behavior, critiques, corpus stats, repositories, and raw snapshot links.",
+    "See [the full generated data report](data/README.md) for release metadata, v1.1 delta, task coverage, and raw snapshot links.",
     "",
   ].join("\n");
 }
@@ -299,9 +249,9 @@ function renderPassAt1Chart(rows: Row[]): string {
 function getLeaderboardPoints(rows: Row[]): LeaderboardPoint[] {
   return rows.flatMap((row) => {
     const model = typeof row.model === "string" ? row.model : null;
-    const effort = typeof row.reasoning_efforts === "string" ? row.reasoning_efforts : null;
-    const passAt1 = getNumber(row.pass_at_1);
-    const cost = getNumber(row.median_cost_usd);
+    const effort = typeof row.reasoning_effort === "string" ? row.reasoning_effort : null;
+    const passAt1 = getNumber(row.pass_at_1) ?? getNumber(row.pass_rate);
+    const cost = getNumber(row.mean_cost_usd) ?? getNumber(row.median_cost_usd);
     if (!model || passAt1 === null || cost === null) {
       return [];
     }

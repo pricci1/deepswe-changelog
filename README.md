@@ -19,22 +19,25 @@ quadrantChart
     quadrant-2 Higher score / higher cost
     quadrant-3 Lower score / higher cost
     quadrant-4 Lower score / lower cost
-    gpt-5-5 xhigh: [0.639, 0.7]
-    gpt-5-4 xhigh: [0.793, 0.555]
-    claude-opus-4-7 max: [0, 0.542]
-    claude-sonnet-4-6 high: [0.702, 0.316]
-    gemini-3-5-flash medium: [0.644, 0.283]
-    claude-opus-4-6 max: [0.708, 0.271]
-    gpt-5-4-mini xhigh: [0.873, 0.243]
-    kimi-k2-6: [0.831, 0.239]
-    mimo-v2-5-pro: [0.895, 0.195]
-    glm-5-1: [0.58, 0.175]
-    gemini-3-1-pro-preview: [0.905, 0.099]
-    deepseek-v4-pro: [0.778, 0.075]
-    gemini-3-flash-preview: [0.934, 0.052]
-    qwen3-6-plus: [0.773, 0.027]
-    claude-haiku-4-5: [0.951, 0.002]
-    minimax-m2-7: [0.966, 0.002]
+    claude-fable-5 xhigh: [0.38, 0.699]
+    claude-fable-5 max: [0, 0.697]
+    claude-fable-5 high: [0.576, 0.686]
+    gpt-5-5 xhigh: [0.666, 0.67]
+    claude-fable-5 medium: [0.719, 0.654]
+    gpt-5-5 high: [0.764, 0.644]
+    claude-fable-5 low: [0.826, 0.596]
+    claude-opus-4-8 max: [0.389, 0.59]
+    claude-opus-4-8 xhigh: [0.63, 0.544]
+    gpt-5-5 medium: [0.873, 0.54]
+    claude-opus-4-8 high: [0.802, 0.518]
+    gpt-5-4 xhigh: [0.739, 0.518]
+    claude-opus-4-8 medium: [0.841, 0.487]
+    claude-opus-4-8 low: [0.894, 0.408]
+    gemini-3-5-flash medium: [0.661, 0.374]
+    kimi-k2-7-code: [0.87, 0.305]
+    claude-sonnet-4-6 high: [0.745, 0.299]
+    gpt-5-5 low: [0.945, 0.27]
+    gemini-3-1-pro-preview high: [0.562, 0.118]
 ```
 
 ### pass@1 leaderboard
@@ -42,30 +45,33 @@ quadrantChart
 ```mermaid
 xychart-beta
     title "DeepSWE pass@1 leaderboard"
-    x-axis ["gpt-5-5 [xhigh]", "gpt-5-4 [xhigh]", "claude-opus-4-7 [max]", "claude-sonnet-4-6 [high]", "gemini-3-5-flash [medium]", "claude-opus-4-6 [max]", "gpt-5-4-mini [xhigh]", "kimi-k2-6", "mimo-v2-5-pro", "glm-5-1", "gemini-3-1-pro-preview", "deepseek-v4-pro", "gemini-3-flash-preview", "qwen3-6-plus", "claude-haiku-4-5", "minimax-m2-7"]
+    x-axis ["claude-fable-5 [xhigh]", "claude-fable-5 [max]", "claude-fable-5 [high]", "gpt-5-5 [xhigh]", "claude-fable-5 [medium]", "gpt-5-5 [high]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-opus-4-8 [medium]", "claude-opus-4-8 [low]", "gemini-3-5-flash [medium]", "kimi-k2-7-code", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gemini-3-1-pro-preview [high]"]
     y-axis "pass at 1 (%)" 0 --> 80
-    bar [70.0, 55.5, 54.2, 31.6, 28.3, 27.1, 24.3, 23.9, 19.5, 17.5, 9.9, 7.5, 5.2, 2.7, 0.2, 0.2]
+    bar [69.9, 69.7, 68.6, 67.0, 65.4, 64.4, 59.6, 59.0, 54.4, 54.0, 51.8, 51.8, 48.7, 40.8, 37.4, 30.5, 29.9, 27.0, 11.8]
 ```
 
 ## Leaderboard
 
-| Model | Config | pass@1 | pass@4 | Passed | Attempts | Tasks | Median cost | Median steps |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | 70.0% | 88.3% | 311 | 444 | 111 | $5.76 | 75 |
-| gpt-5-4 | mini_swe_agent_gpt_5_4_xhigh | 55.5% | 77.0% | 251 | 452 | 113 | $3.31 | 62 |
-| claude-opus-4-7 | mini_swe_agent_claude_opus_4_7_max | 54.2% | 85.8% | 245 | 452 | 113 | $15.95 | 191 |
-| claude-sonnet-4-6 | mini_swe_agent_claude_sonnet_4_6_high | 31.6% | 61.9% | 142 | 447 | 113 | $4.75 | 121 |
-| gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | 28.3% | 56.6% | 128 | 452 | 113 | $5.67 | 71 |
-| claude-opus-4-6 | mini_swe_agent_claude_opus_4_6_max | 27.1% | 50.4% | 122 | 442 | 113 | $4.66 | 94 |
-| gpt-5-4-mini | mini_swe_agent_gpt_5_4_mini_xhigh | 24.3% | 46.0% | 110 | 452 | 113 | $2.03 | 83 |
-| kimi-k2-6 | mini_swe_agent_kimi_k2_6_default | 23.9% | 48.7% | 108 | 452 | 113 | $2.70 | 136.5 |
-| mimo-v2-5-pro | mini_swe_agent_mimo_v2_5_pro_default | 19.5% | 45.1% | 88 | 452 | 113 | $1.68 | 114.5 |
-| glm-5-1 | mini_swe_agent_glm_5_1_default | 17.5% | 38.9% | 79 | 451 | 113 | $6.70 | 168 |
-| gemini-3-1-pro-preview | mini_swe_agent_gemini_3_1_pro_preview_default | 9.9% | 24.8% | 43 | 442 | 113 | $1.52 | 67 |
-| deepseek-v4-pro | mini_swe_agent_deepseek_v4_pro_default | 7.5% | 18.6% | 34 | 452 | 113 | $3.54 | 103.5 |
-| gemini-3-flash-preview | mini_swe_agent_gemini_3_flash_preview_default | 5.2% | 15.0% | 22 | 428 | 113 | $1.04 | 54 |
-| qwen3-6-plus | mini_swe_agent_qwen3_6_plus_default | 2.7% | 9.7% | 12 | 452 | 113 | $3.61 | 158 |
-| claude-haiku-4-5 | mini_swe_agent_claude_haiku_4_5_default | 0.2% | 0.9% | 1 | 452 | 113 | $0.78 | 103 |
-| minimax-m2-7 | mini_swe_agent_minimax_m2_7_default | 0.2% | 0.9% | 1 | 452 | 113 | $0.54 | 116 |
+| Model | Config | Effort | Pass@1 | Passed | Attempts | Avg cost | Avg steps |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| claude-fable-5 | mini_swe_agent_claude_fable_5_xhigh | xhigh | 69.9% | 316 | 452 | $13.41 | 68.4 |
+| claude-fable-5 | mini_swe_agent_claude_fable_5_max | max | 69.7% | 304 | 436 | $21.63 | 88.43 |
+| claude-fable-5 | mini_swe_agent_claude_fable_5_high | high | 68.6% | 295 | 430 | $9.18 | 58.74 |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | xhigh | 67.0% | 303 | 452 | $7.23 | 82.02 |
+| claude-fable-5 | mini_swe_agent_claude_fable_5_medium | medium | 65.4% | 285 | 436 | $6.09 | 48.37 |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_high | high | 64.4% | 291 | 452 | $5.10 | 61.92 |
+| claude-fable-5 | mini_swe_agent_claude_fable_5_low | low | 59.6% | 258 | 433 | $3.76 | 37.8 |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_max | max | 59.0% | 253 | 429 | $13.22 | 120 |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_xhigh | xhigh | 54.4% | 243 | 447 | $8.01 | 94.64 |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_medium | medium | 54.0% | 244 | 452 | $2.75 | 45.98 |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_high | high | 51.8% | 234 | 452 | $4.28 | 72.5 |
+| gpt-5-4 | mini_swe_agent_gpt_5_4_xhigh | xhigh | 51.8% | 234 | 452 | $5.65 | 70.47 |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_medium | medium | 48.7% | 220 | 452 | $3.44 | 65.57 |
+| claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_low | low | 40.8% | 184 | 451 | $2.29 | 53.98 |
+| gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | medium | 37.4% | 169 | 452 | $7.34 | 85.72 |
+| kimi-k2-7-code | mini_swe_agent_kimi_k2_7_code_default |  | 30.5% | 138 | 452 | $2.82 | 149.12 |
+| claude-sonnet-4-6 | mini_swe_agent_claude_sonnet_4_6_high | high | 29.9% | 135 | 451 | $5.52 | 133.66 |
+| gpt-5-5 | mini_swe_agent_gpt_5_5_low | low | 27.0% | 122 | 452 | $1.20 | 28.07 |
+| gemini-3-1-pro-preview | mini_swe_agent_gemini_3_1_pro_preview_high | high | 11.8% | 53 | 451 | $9.48 | 81.39 |
 
-See [the full generated data report](data/README.md) for comparisons, model behavior aggregates, verification behavior, critiques, corpus stats, repositories, and raw snapshot links.
+See [the full generated data report](data/README.md) for release metadata, v1.1 delta, task coverage, and raw snapshot links.
