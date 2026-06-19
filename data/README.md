@@ -8,7 +8,7 @@ Descriptive metadata and other noisy non-result fields are intentionally omitted
 
 DeepSWE is published by DataCurve at [deepswe.datacurve.ai](https://deepswe.datacurve.ai). Please visit the original site for the canonical benchmark presentation and context.
 
-Artifact JSON source: https://deepswe.datacurve.ai/artifacts
+Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1
 
 ## Summary
 

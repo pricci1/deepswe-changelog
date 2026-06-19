@@ -1,4 +1,4 @@
-const BASE_URL = "https://deepswe.datacurve.ai/artifacts";
+const BASE_URL = "https://deepswe.datacurve.ai/artifacts/v1";
 
 const ARTIFACTS = [
   "summary",
