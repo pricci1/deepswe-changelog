@@ -32,6 +32,7 @@ quadrantChart
     claude-opus-4-8 high: [0.802, 0.518]
     gpt-5-4 xhigh: [0.739, 0.518]
     claude-opus-4-8 medium: [0.841, 0.487]
+    glm-5-2 max: [0.819, 0.438]
     claude-opus-4-8 low: [0.894, 0.408]
     gemini-3-5-flash medium: [0.661, 0.374]
     kimi-k2-7-code: [0.87, 0.305]
@@ -45,9 +46,9 @@ quadrantChart
 ```mermaid
 xychart-beta
     title "DeepSWE pass@1 leaderboard"
-    x-axis ["claude-fable-5 [xhigh]", "claude-fable-5 [max]", "claude-fable-5 [high]", "gpt-5-5 [xhigh]", "claude-fable-5 [medium]", "gpt-5-5 [high]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-opus-4-8 [medium]", "claude-opus-4-8 [low]", "gemini-3-5-flash [medium]", "kimi-k2-7-code", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gemini-3-1-pro-preview [high]"]
+    x-axis ["claude-fable-5 [xhigh]", "claude-fable-5 [max]", "claude-fable-5 [high]", "gpt-5-5 [xhigh]", "claude-fable-5 [medium]", "gpt-5-5 [high]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-opus-4-8 [medium]", "glm-5-2 [max]", "claude-opus-4-8 [low]", "gemini-3-5-flash [medium]", "kimi-k2-7-code", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gemini-3-1-pro-preview [high]"]
     y-axis "pass at 1 (%)" 0 --> 80
-    bar [69.9, 69.7, 68.6, 67.0, 65.4, 64.4, 59.6, 59.0, 54.4, 54.0, 51.8, 51.8, 48.7, 40.8, 37.4, 30.5, 29.9, 27.0, 11.8]
+    bar [69.9, 69.7, 68.6, 67.0, 65.4, 64.4, 59.6, 59.0, 54.4, 54.0, 51.8, 51.8, 48.7, 43.8, 40.8, 37.4, 30.5, 29.9, 27.0, 11.8]
 ```
 
 ## Leaderboard
@@ -67,6 +68,7 @@ xychart-beta
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_high | high | 51.8% | 234 | 452 | $4.28 | 72.5 |
 | gpt-5-4 | mini_swe_agent_gpt_5_4_xhigh | xhigh | 51.8% | 234 | 452 | $5.65 | 70.47 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_medium | medium | 48.7% | 220 | 452 | $3.44 | 65.57 |
+| glm-5-2 | mini_swe_agent_glm_5_2_max | max | 43.8% | 197 | 450 | $3.92 | 129.13 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_low | low | 40.8% | 184 | 451 | $2.29 | 53.98 |
 | gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | medium | 37.4% | 169 | 452 | $7.34 | 85.72 |
 | kimi-k2-7-code | mini_swe_agent_kimi_k2_7_code_default |  | 30.5% | 138 | 452 | $2.82 | 149.12 |
