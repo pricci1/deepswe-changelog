@@ -1,7 +1,7 @@
 {
   "latest_job": {
-    "finished_at": "2026-06-20T22:09:10.110006",
-    "name": "20260620-deep-swe-glm-5-2"
+    "finished_at": "2026-06-23T23:33:47.148709",
+    "name": "20260623-deep-swe-glm-5-2-ex-max"
   },
   "n_tasks_in_set": 113,
   "rows": [
@@ -515,6 +515,38 @@
       "pass_at_4": 0.6637168141592921,
       "pass_rate": 0.37389380530973454,
       "reasoning_effort": "medium",
+      "source": "deep-swe"
+    },
+    {
+      "ci_attempted": 452,
+      "ci_half": 0.047500729479216554,
+      "ci_hi": 0.41033258788629623,
+      "ci_lo": 0.3153311289278631,
+      "ci_method": "95% run-to-run: SE across repeated whole-benchmark passes (1.96 * std(runs)/sqrt(R))",
+      "ci_passed": 164,
+      "config": "mini_swe_agent_glm_5_2_high",
+      "mean_agent_steps": 121.88274336283186,
+      "mean_cost_usd": 2.8355164725663715,
+      "mean_duration_seconds": 1794.4733617809734,
+      "mean_input_tokens": 9070605.707964601,
+      "mean_output_tokens": 54245.50442477876,
+      "median_agent_steps": 112,
+      "median_cost_usd": 2.25012998,
+      "median_duration_seconds": 1565.2561315,
+      "median_input_tokens": 7049445.5,
+      "median_output_tokens": 48956.5,
+      "median_output_tokens_to_pass": 47433.5,
+      "median_peak_context_tokens": 102096,
+      "model": "glm-5-2",
+      "n_attempted": 452,
+      "n_passed": 164,
+      "n_runs": 4,
+      "n_tasks_attempted": 113,
+      "n_tasks_passed_any": 77,
+      "pass_at_1": 0.36283185840707965,
+      "pass_at_4": 0.6814159292035398,
+      "pass_rate": 0.36283185840707965,
+      "reasoning_effort": "high",
       "source": "deep-swe"
     },
     {
