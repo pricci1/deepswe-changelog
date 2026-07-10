@@ -16,7 +16,7 @@ Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1.1
 | --- | --- |
 | release_id | v1.1 |
 | tasks | 113 |
-| trials | 11,752 |
+| trials | 18,522 |
 | compared_to | v1 |
 | shared_configs | 10 |
 
@@ -24,32 +24,47 @@ Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1.1
 
 | Model | Config | Effort | Pass@1 | Passed | Attempts | Avg cost | Avg output tokens | Avg steps |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_max | max | 72.7% | 327 | 450 | $8.39 | 60,013.64 | 61.25 |
+| gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_xhigh | xhigh | 70.7% | 319 | 451 | $4.70 | 40,744.59 | 44 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_xhigh | xhigh | 69.9% | 316 | 452 | $13.41 | 80,352.17 | 68.4 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_max | max | 69.7% | 304 | 436 | $21.63 | 118,592.77 | 88.43 |
+| gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_max | max | 69.6% | 314 | 451 | $4.95 | 71,938.63 | 75.93 |
+| gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_high | high | 69.4% | 313 | 451 | $3.47 | 28,450.32 | 36.89 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_high | high | 68.6% | 295 | 430 | $9.18 | 57,287.07 | 58.74 |
+| gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_max | max | 67.2% | 301 | 448 | $3.03 | 73,399.71 | 101.68 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | xhigh | 67.0% | 303 | 452 | $7.23 | 46,294.72 | 82.02 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_medium | medium | 65.4% | 285 | 436 | $6.09 | 40,201.35 | 48.37 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_high | high | 64.4% | 291 | 452 | $5.10 | 31,159.5 | 61.92 |
+| gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_medium | medium | 61.1% | 276 | 452 | $1.86 | 18,425.22 | 30.91 |
+| gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_xhigh | xhigh | 60.2% | 272 | 452 | $2.13 | 39,616.54 | 43.07 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_low | low | 59.6% | 258 | 433 | $3.76 | 25,242.83 | 37.8 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_max | max | 59.0% | 253 | 429 | $13.22 | 135,031.67 | 120 |
+| gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_xhigh | xhigh | 56.9% | 257 | 452 | $1.54 | 44,677.9 | 71.1 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_xhigh | xhigh | 54.4% | 243 | 447 | $8.01 | 86,088.79 | 94.64 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_medium | medium | 54.0% | 244 | 452 | $2.75 | 19,625.43 | 45.98 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_max | max | 53.8% | 238 | 442 | $26.40 | 214,117.55 | 268.45 |
+| gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_high | high | 53.8% | 243 | 452 | $1.13 | 21,517.04 | 33.51 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_high | high | 51.8% | 234 | 452 | $4.28 | 50,063.53 | 72.5 |
 | gpt-5-4 | mini_swe_agent_gpt_5_4_xhigh | xhigh | 51.8% | 234 | 452 | $5.65 | 71,408.87 | 70.47 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_xhigh | xhigh | 49.7% | 224 | 451 | $11.89 | 120,698.59 | 185.53 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_medium | medium | 48.7% | 220 | 452 | $3.44 | 41,313.45 | 65.57 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_high | high | 48.2% | 218 | 452 | $7.43 | 87,294.76 | 146.58 |
+| gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_low | low | 45.4% | 205 | 452 | $1.07 | 10,579.14 | 23.36 |
+| gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_high | high | 44.2% | 200 | 452 | $0.78 | 25,778.27 | 49.02 |
 | glm-5-2 | mini_swe_agent_glm_5_2_max | max | 43.8% | 197 | 450 | $3.92 | 78,175.31 | 129.13 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_low | low | 40.8% | 184 | 451 | $2.29 | 28,922.74 | 53.98 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_medium | medium | 39.8% | 179 | 450 | $4.08 | 56,816.75 | 107.61 |
 | gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | medium | 37.4% | 169 | 452 | $7.34 | 275,777.51 | 85.72 |
 | glm-5-2 | mini_swe_agent_glm_5_2_high | high | 36.3% | 164 | 452 | $2.84 | 54,245.5 | 121.88 |
+| gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_medium | medium | 35.1% | 158 | 450 | $0.58 | 11,746.56 | 25.15 |
 | kimi-k2-7-code | mini_swe_agent_kimi_k2_7_code_default |  | 30.5% | 138 | 452 | $2.82 | 59,297.25 | 149.12 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_low | low | 30.5% | 137 | 449 | $2.19 | 35,595.08 | 76.89 |
 | claude-sonnet-4-6 | mini_swe_agent_claude_sonnet_4_6_high | high | 29.9% | 135 | 451 | $5.52 | 76,160.31 | 133.66 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_low | low | 27.0% | 122 | 452 | $1.20 | 9,442.77 | 28.07 |
+| gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_low | low | 24.1% | 108 | 449 | $0.43 | 8,572.26 | 21.46 |
 | gemini-3-1-pro-preview | mini_swe_agent_gemini_3_1_pro_preview_high | high | 11.8% | 53 | 451 | $9.48 | 196,386.1 | 81.39 |
+| gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_medium | medium | 11.3% | 51 | 452 | $0.22 | 8,179.57 | 23.68 |
+| gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_low | low | 1.5% | 7 | 452 | $0.07 | 3,127.75 | 12.46 |
 
 ## v1.1 delta vs v1
 
