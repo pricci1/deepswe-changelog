@@ -1,7 +1,7 @@
 {
   "latest_job": {
-    "finished_at": "2026-07-07T22:44:15.580538Z",
-    "name": "20260707-gpt-5.6-luna"
+    "finished_at": "2026-07-12T20:56:14.018900",
+    "name": "20260710-deep-swe-muse-spark-1.1"
   },
   "n_tasks_in_set": 113,
   "rows": [
@@ -643,6 +643,38 @@
       "pass_at_4": 0.8053097345132744,
       "pass_rate": 0.5376106194690266,
       "reasoning_effort": "high",
+      "source": "deep-swe"
+    },
+    {
+      "ci_attempted": 452,
+      "ci_half": 0.030353424539337114,
+      "ci_hi": 0.5635392652473017,
+      "ci_lo": 0.5028324161686275,
+      "ci_method": "95% run-to-run: SE across repeated whole-benchmark passes (1.96 * std(runs)/sqrt(R))",
+      "ci_passed": 241,
+      "config": "mini_swe_agent_muse_spark_1_1_xhigh",
+      "mean_agent_steps": 95.82522123893806,
+      "mean_cost_usd": 2.361142644469026,
+      "mean_duration_seconds": 897.5133296747788,
+      "mean_input_tokens": 12005399.261061948,
+      "mean_output_tokens": 74008.4203539823,
+      "median_agent_steps": 86,
+      "median_cost_usd": 1.7171158,
+      "median_duration_seconds": 688.5861825,
+      "median_input_tokens": 8037064.5,
+      "median_output_tokens": 66088,
+      "median_output_tokens_to_pass": 61398,
+      "median_peak_context_tokens": 154817.5,
+      "model": "muse-spark-1-1",
+      "n_attempted": 452,
+      "n_passed": 241,
+      "n_runs": 4,
+      "n_tasks_attempted": 113,
+      "n_tasks_passed_any": 90,
+      "pass_at_1": 0.5331858407079646,
+      "pass_at_4": 0.7964601769911505,
+      "pass_rate": 0.5331858407079646,
+      "reasoning_effort": "xhigh",
       "source": "deep-swe"
     },
     {
