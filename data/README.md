@@ -16,7 +16,7 @@ Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1.1
 | --- | --- |
 | release_id | v1.1 |
 | tasks | 113 |
-| trials | 19,426 |
+| trials | 19,878 |
 | compared_to | v1 |
 | shared_configs | 10 |
 
@@ -31,6 +31,7 @@ Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1.1
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_max | max | 69.6% | 314 | 451 | $4.95 | 71,938.63 | 75.93 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_high | high | 69.4% | 313 | 451 | $3.47 | 28,450.32 | 36.89 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_high | high | 68.6% | 295 | 430 | $9.18 | 57,287.07 | 58.74 |
+| kimi-k3 | mini_swe_agent_kimi_k3_max | max | 68.5% | 309 | 451 | $4.65 | 81,499.84 | 97.59 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_max | max | 67.2% | 301 | 448 | $3.03 | 73,399.71 | 101.68 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | xhigh | 67.0% | 303 | 452 | $7.23 | 46,294.72 | 82.02 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_medium | medium | 65.4% | 285 | 436 | $6.09 | 40,201.35 | 48.37 |

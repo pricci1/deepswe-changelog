@@ -1,7 +1,7 @@
 {
   "latest_job": {
-    "finished_at": "2026-07-14T05:50:28.187379",
-    "name": "20260713-grok-4.5"
+    "finished_at": "2026-07-17T07:49:34.449180",
+    "name": "20260715-kimi-k3"
   },
   "n_tasks_in_set": 113,
   "rows": [
@@ -227,6 +227,38 @@
       "pass_at_4": 0.8672566371681416,
       "pass_rate": 0.686046511627907,
       "reasoning_effort": "high",
+      "source": "deep-swe"
+    },
+    {
+      "ci_attempted": 451,
+      "ci_half": 0.045370140792823206,
+      "ci_hi": 0.7305142649613376,
+      "ci_lo": 0.6397739833756912,
+      "ci_method": "95% run-to-run: SE across repeated whole-benchmark passes (1.96 * std(runs)/sqrt(R))",
+      "ci_passed": 309,
+      "config": "mini_swe_agent_kimi_k3_max",
+      "mean_agent_steps": 97.58758314855876,
+      "mean_cost_usd": 4.654682129933482,
+      "mean_duration_seconds": 4541.447376412417,
+      "mean_input_tokens": 9695436.246119734,
+      "mean_output_tokens": 81499.84257206209,
+      "median_agent_steps": 88,
+      "median_cost_usd": 3.6024987,
+      "median_duration_seconds": 3972.857633,
+      "median_input_tokens": 6930356,
+      "median_output_tokens": 75383,
+      "median_output_tokens_to_pass": 74586,
+      "median_peak_context_tokens": 130945,
+      "model": "kimi-k3",
+      "n_attempted": 451,
+      "n_passed": 309,
+      "n_runs": 4,
+      "n_tasks_attempted": 113,
+      "n_tasks_passed_any": 101,
+      "pass_at_1": 0.6851441241685144,
+      "pass_at_4": 0.8938053097345132,
+      "pass_rate": 0.6851441241685144,
+      "reasoning_effort": "max",
       "source": "deep-swe"
     },
     {
