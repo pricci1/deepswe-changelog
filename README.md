@@ -39,6 +39,7 @@ quadrantChart
     gpt-5-5 medium: [0.896, 0.54]
     claude-sonnet-5 max: [0, 0.538]
     gpt-5-6-terra high: [0.957, 0.538]
+    grok-4-5 high: [0.908, 0.538]
     muse-spark-1-1 xhigh: [0.911, 0.533]
     claude-opus-4-8 high: [0.838, 0.518]
     gpt-5-4 xhigh: [0.786, 0.518]
@@ -68,9 +69,9 @@ quadrantChart
 ```mermaid
 xychart-beta
     title "DeepSWE pass@1 leaderboard"
-    x-axis ["gpt-5-6-sol [max]", "gpt-5-6-sol [xhigh]", "claude-fable-5 [xhigh]", "claude-fable-5 [max]", "gpt-5-6-terra [max]", "gpt-5-6-sol [high]", "claude-fable-5 [high]", "gpt-5-6-luna [max]", "gpt-5-5 [xhigh]", "claude-fable-5 [medium]", "gpt-5-5 [high]", "gpt-5-6-sol [medium]", "gpt-5-6-terra [xhigh]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "gpt-5-6-luna [xhigh]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-sonnet-5 [max]", "gpt-5-6-terra [high]", "muse-spark-1-1 [xhigh]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-sonnet-5 [xhigh]", "claude-opus-4-8 [medium]", "claude-sonnet-5 [high]", "gpt-5-6-sol [low]", "gpt-5-6-luna [high]", "glm-5-2 [max]", "claude-opus-4-8 [low]", "claude-sonnet-5 [medium]", "gemini-3-5-flash [medium]", "glm-5-2 [high]", "gpt-5-6-terra [medium]", "kimi-k2-7-code", "claude-sonnet-5 [low]", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gpt-5-6-terra [low]", "gemini-3-1-pro-preview [high]", "gpt-5-6-luna [medium]", "gpt-5-6-luna [low]"]
+    x-axis ["gpt-5-6-sol [max]", "gpt-5-6-sol [xhigh]", "claude-fable-5 [xhigh]", "claude-fable-5 [max]", "gpt-5-6-terra [max]", "gpt-5-6-sol [high]", "claude-fable-5 [high]", "gpt-5-6-luna [max]", "gpt-5-5 [xhigh]", "claude-fable-5 [medium]", "gpt-5-5 [high]", "gpt-5-6-sol [medium]", "gpt-5-6-terra [xhigh]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "gpt-5-6-luna [xhigh]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-sonnet-5 [max]", "gpt-5-6-terra [high]", "grok-4-5 [high]", "muse-spark-1-1 [xhigh]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-sonnet-5 [xhigh]", "claude-opus-4-8 [medium]", "claude-sonnet-5 [high]", "gpt-5-6-sol [low]", "gpt-5-6-luna [high]", "glm-5-2 [max]", "claude-opus-4-8 [low]", "claude-sonnet-5 [medium]", "gemini-3-5-flash [medium]", "glm-5-2 [high]", "gpt-5-6-terra [medium]", "kimi-k2-7-code", "claude-sonnet-5 [low]", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gpt-5-6-terra [low]", "gemini-3-1-pro-preview [high]", "gpt-5-6-luna [medium]", "gpt-5-6-luna [low]"]
     y-axis "pass at 1 (%)" 0 --> 80
-    bar [72.7, 70.7, 69.9, 69.7, 69.6, 69.4, 68.6, 67.2, 67.0, 65.4, 64.4, 61.1, 60.2, 59.6, 59.0, 56.9, 54.4, 54.0, 53.8, 53.8, 53.3, 51.8, 51.8, 49.7, 48.7, 48.2, 45.4, 44.2, 43.8, 40.8, 39.8, 37.4, 36.3, 35.1, 30.5, 30.5, 29.9, 27.0, 24.1, 11.8, 11.3, 1.5]
+    bar [72.7, 70.7, 69.9, 69.7, 69.6, 69.4, 68.6, 67.2, 67.0, 65.4, 64.4, 61.1, 60.2, 59.6, 59.0, 56.9, 54.4, 54.0, 53.8, 53.8, 53.8, 53.3, 51.8, 51.8, 49.7, 48.7, 48.2, 45.4, 44.2, 43.8, 40.8, 39.8, 37.4, 36.3, 35.1, 30.5, 30.5, 29.9, 27.0, 24.1, 11.8, 11.3, 1.5]
 ```
 
 ## Leaderboard
@@ -97,6 +98,7 @@ xychart-beta
 | gpt-5-5 | mini_swe_agent_gpt_5_5_medium | medium | 54.0% | 244 | 452 | $2.75 | 45.98 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_max | max | 53.8% | 238 | 442 | $26.40 | 268.45 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_high | high | 53.8% | 243 | 452 | $1.13 | 33.51 |
+| grok-4-5 | mini_swe_agent_grok_4_5_high | high | 53.8% | 243 | 452 | $2.42 | 61.33 |
 | muse-spark-1-1 | mini_swe_agent_muse_spark_1_1_xhigh | xhigh | 53.3% | 241 | 452 | $2.36 | 95.83 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_high | high | 51.8% | 234 | 452 | $4.28 | 72.5 |
 | gpt-5-4 | mini_swe_agent_gpt_5_4_xhigh | xhigh | 51.8% | 234 | 452 | $5.65 | 70.47 |

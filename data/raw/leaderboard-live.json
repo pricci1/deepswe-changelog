@@ -1,7 +1,7 @@
 {
   "latest_job": {
-    "finished_at": "2026-07-12T20:56:14.018900",
-    "name": "20260710-deep-swe-muse-spark-1.1"
+    "finished_at": "2026-07-14T05:50:28.187379",
+    "name": "20260713-grok-4.5"
   },
   "n_tasks_in_set": 113,
   "rows": [
@@ -641,6 +641,38 @@
       "n_tasks_passed_any": 91,
       "pass_at_1": 0.5376106194690266,
       "pass_at_4": 0.8053097345132744,
+      "pass_rate": 0.5376106194690266,
+      "reasoning_effort": "high",
+      "source": "deep-swe"
+    },
+    {
+      "ci_attempted": 452,
+      "ci_half": 0.0228080457287792,
+      "ci_hi": 0.5604186651978057,
+      "ci_lo": 0.5148025737402474,
+      "ci_method": "95% run-to-run: SE across repeated whole-benchmark passes (1.96 * std(runs)/sqrt(R))",
+      "ci_passed": 243,
+      "config": "mini_swe_agent_grok_4_5_high",
+      "mean_agent_steps": 61.33185840707964,
+      "mean_cost_usd": 2.4157481725663716,
+      "mean_duration_seconds": 484.7029359800885,
+      "mean_input_tokens": 4059182.975663717,
+      "mean_output_tokens": 35525.33185840708,
+      "median_agent_steps": 56,
+      "median_cost_usd": 2.02311,
+      "median_duration_seconds": 430.0852805,
+      "median_input_tokens": 3293744.5,
+      "median_output_tokens": 34250,
+      "median_output_tokens_to_pass": 33872,
+      "median_peak_context_tokens": 94044,
+      "model": "grok-4-5",
+      "n_attempted": 452,
+      "n_passed": 243,
+      "n_runs": 4,
+      "n_tasks_attempted": 113,
+      "n_tasks_passed_any": 88,
+      "pass_at_1": 0.5376106194690266,
+      "pass_at_4": 0.7787610619469026,
       "pass_rate": 0.5376106194690266,
       "reasoning_effort": "high",
       "source": "deep-swe"
