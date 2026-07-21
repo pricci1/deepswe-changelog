@@ -1,7 +1,7 @@
 {
   "latest_job": {
-    "finished_at": "2026-07-17T07:49:34.449180",
-    "name": "20260715-kimi-k3"
+    "finished_at": "2026-07-15T20:29:08.470283",
+    "name": "20260715-deep-swe-v1-1-gemini-flash-early-exp2-high"
   },
   "n_tasks_in_set": 113,
   "rows": [
@@ -867,6 +867,38 @@
       "pass_at_4": 0.7610619469026548,
       "pass_rate": 0.48672566371681414,
       "reasoning_effort": "medium",
+      "source": "deep-swe"
+    },
+    {
+      "ci_attempted": 451,
+      "ci_half": 0.05003568121456619,
+      "ci_hi": 0.5356232643631249,
+      "ci_lo": 0.43555190193399257,
+      "ci_method": "95% run-to-run: SE across repeated whole-benchmark passes (1.96 * std(runs)/sqrt(R))",
+      "ci_passed": 219,
+      "config": "mini_swe_agent_gemini_3_6_flash_high",
+      "mean_agent_steps": 108.31042128603104,
+      "mean_cost_usd": 3.532355313192905,
+      "mean_duration_seconds": 1279.711030638581,
+      "mean_input_tokens": 12585482.277161863,
+      "mean_output_tokens": 96978.28381374723,
+      "median_agent_steps": 95,
+      "median_cost_usd": 2.6507990999999995,
+      "median_duration_seconds": 961.91916,
+      "median_input_tokens": 8050808,
+      "median_output_tokens": 83016,
+      "median_output_tokens_to_pass": 82619,
+      "median_peak_context_tokens": 154493,
+      "model": "gemini-3-6-flash",
+      "n_attempted": 451,
+      "n_passed": 219,
+      "n_runs": 4,
+      "n_tasks_attempted": 113,
+      "n_tasks_passed_any": 86,
+      "pass_at_1": 0.48558758314855877,
+      "pass_at_4": 0.7610619469026548,
+      "pass_rate": 0.48558758314855877,
+      "reasoning_effort": "high",
       "source": "deep-swe"
     },
     {
