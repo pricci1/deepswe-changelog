@@ -1,7 +1,7 @@
 {
   "latest_job": {
-    "finished_at": "2026-08-03T17:42:27.603007",
-    "name": "20260803-qwen-3.8-max"
+    "finished_at": "2026-08-05T22:40:23.371261",
+    "name": "20260805-deepseek-v4-flash-direct"
   },
   "n_tasks_in_set": 113,
   "rows": [
@@ -899,6 +899,38 @@
       "pass_at_4": 0.7787610619469026,
       "pass_rate": 0.5376106194690266,
       "reasoning_effort": "high",
+      "source": "deep-swe"
+    },
+    {
+      "ci_attempted": 452,
+      "ci_half": 0.035669502150324287,
+      "ci_hi": 0.5688553428582889,
+      "ci_lo": 0.4975163385576403,
+      "ci_method": "95% run-to-run: SE across repeated whole-benchmark passes (1.96 * std(runs)/sqrt(R))",
+      "ci_passed": 241,
+      "config": "mini_swe_agent_deepseek_v4_flash_max",
+      "mean_agent_steps": 152.87610619469027,
+      "mean_cost_usd": 0.10023560370265487,
+      "mean_duration_seconds": 1438.9961937522125,
+      "mean_input_tokens": 19829931.451327432,
+      "mean_output_tokens": 107687.02212389381,
+      "median_agent_steps": 148,
+      "median_cost_usd": 0.09124898719999996,
+      "median_duration_seconds": 1383.7182735000001,
+      "median_input_tokens": 17312559.5,
+      "median_output_tokens": 104491.5,
+      "median_output_tokens_to_pass": 100483,
+      "median_peak_context_tokens": 201636.5,
+      "model": "deepseek-v4-flash",
+      "n_attempted": 452,
+      "n_passed": 241,
+      "n_runs": 4,
+      "n_tasks_attempted": 113,
+      "n_tasks_passed_any": 91,
+      "pass_at_1": 0.5331858407079646,
+      "pass_at_4": 0.8053097345132744,
+      "pass_rate": 0.5331858407079646,
+      "reasoning_effort": "max",
       "source": "deep-swe"
     },
     {
