@@ -16,7 +16,7 @@ Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1.1
 | --- | --- |
 | release_id | v1.1 |
 | tasks | 113 |
-| trials | 23,490 |
+| trials | 23,942 |
 | compared_to | v1 |
 | shared_configs | 10 |
 
@@ -47,6 +47,7 @@ Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1.1
 | claude-opus-5 | mini_swe_agent_claude_opus_5_low | low | 58.1% | 261 | 449 | $1.66 | 19,884.31 | 35.64 |
 | qwen3-8-max | mini_swe_agent_qwen3_8_max_xhigh | xhigh | 57.5% | 258 | 449 | $3.73 | 95,075.18 | 111.34 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_xhigh | xhigh | 56.9% | 257 | 452 | $1.54 | 44,677.9 | 71.1 |
+| muse-spark-1-2 | mini_swe_agent_muse_spark_1_2_xhigh | xhigh | 54.9% | 248 | 452 | $3.70 | 99,226.38 | 100.76 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_xhigh | xhigh | 54.4% | 243 | 447 | $8.01 | 86,088.79 | 94.64 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_medium | medium | 54.0% | 244 | 452 | $2.75 | 19,625.43 | 45.98 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_max | max | 53.8% | 238 | 442 | $26.40 | 214,117.55 | 268.45 |

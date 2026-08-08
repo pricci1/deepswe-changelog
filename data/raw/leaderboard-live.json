@@ -1,7 +1,7 @@
 {
   "latest_job": {
-    "finished_at": "2026-08-05T22:40:23.371261",
-    "name": "20260805-deepseek-v4-flash-direct"
+    "finished_at": "2026-08-07T07:35:42.918514",
+    "name": "20260806-muse-spark-1.2"
   },
   "n_tasks_in_set": 113,
   "rows": [
@@ -738,6 +738,38 @@
       "pass_at_1": 0.5685840707964602,
       "pass_at_4": 0.7876106194690266,
       "pass_rate": 0.5685840707964602,
+      "reasoning_effort": "xhigh",
+      "source": "deep-swe"
+    },
+    {
+      "ci_attempted": 452,
+      "ci_half": 0.02124297201927127,
+      "ci_hi": 0.5699155383909527,
+      "ci_lo": 0.5274295943524101,
+      "ci_method": "95% run-to-run: SE across repeated whole-benchmark passes (1.96 * std(runs)/sqrt(R))",
+      "ci_passed": 248,
+      "config": "mini_swe_agent_muse_spark_1_2_xhigh",
+      "mean_agent_steps": 100.75884955752213,
+      "mean_cost_usd": 3.6955048180309733,
+      "mean_duration_seconds": 927.8692516349557,
+      "mean_input_tokens": 13693824.435840707,
+      "mean_output_tokens": 99226.38053097345,
+      "median_agent_steps": 94,
+      "median_cost_usd": 2.6840506,
+      "median_duration_seconds": 784.787489,
+      "median_input_tokens": 10339991,
+      "median_output_tokens": 81250,
+      "median_output_tokens_to_pass": 77863,
+      "median_peak_context_tokens": 189481,
+      "model": "muse-spark-1-2",
+      "n_attempted": 452,
+      "n_passed": 248,
+      "n_runs": 4,
+      "n_tasks_attempted": 113,
+      "n_tasks_passed_any": 92,
+      "pass_at_1": 0.5486725663716814,
+      "pass_at_4": 0.8141592920353983,
+      "pass_rate": 0.5486725663716814,
       "reasoning_effort": "xhigh",
       "source": "deep-swe"
     },
