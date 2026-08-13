@@ -31,10 +31,14 @@ quadrantChart
     claude-opus-5 medium: [0.875, 0.689]
     claude-fable-5 high: [0.652, 0.686]
     kimi-k3 max: [0.824, 0.685]
+    grok-4-6 medium: [0.869, 0.675]
     gpt-5-6-luna max: [0.885, 0.672]
     gpt-5-5 xhigh: [0.726, 0.67]
+    grok-4-6 xhigh: [0.792, 0.667]
     claude-fable-5 medium: [0.769, 0.654]
+    grok-4-6 high: [0.834, 0.652]
     gpt-5-5 high: [0.807, 0.644]
+    deepseek-v4-pro max: [0.991, 0.628]
     gpt-5-6-sol medium: [0.929, 0.611]
     gpt-5-6-terra xhigh: [0.919, 0.602]
     claude-fable-5 low: [0.858, 0.596]
@@ -59,6 +63,7 @@ quadrantChart
     gpt-5-6-sol low: [0.959, 0.454]
     gpt-5-6-luna high: [0.971, 0.442]
     glm-5-2 max: [0.852, 0.438]
+    grok-4-6 low: [0.961, 0.416]
     claude-opus-4-8 low: [0.913, 0.408]
     claude-sonnet-5 medium: [0.845, 0.398]
     gemini-3-5-flash medium: [0.722, 0.374]
@@ -79,9 +84,9 @@ quadrantChart
 ```mermaid
 xychart-beta
     title "DeepSWE pass@1 leaderboard"
-    x-axis ["claude-opus-5 [max]", "claude-opus-5 [xhigh]", "claude-opus-5 [high]", "gpt-5-6-sol [max]", "gpt-5-6-sol [xhigh]", "claude-fable-5 [xhigh]", "claude-fable-5 [max]", "gpt-5-6-terra [max]", "gpt-5-6-sol [high]", "claude-opus-5 [medium]", "claude-fable-5 [high]", "kimi-k3 [max]", "gpt-5-6-luna [max]", "gpt-5-5 [xhigh]", "claude-fable-5 [medium]", "gpt-5-5 [high]", "gpt-5-6-sol [medium]", "gpt-5-6-terra [xhigh]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-5 [low]", "qwen3-8-max [xhigh]", "gpt-5-6-luna [xhigh]", "muse-spark-1-2 [xhigh]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-sonnet-5 [max]", "gpt-5-6-terra [high]", "grok-4-5 [high]", "deepseek-v4-flash [max]", "muse-spark-1-1 [xhigh]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-sonnet-5 [xhigh]", "claude-opus-4-8 [medium]", "gemini-3-6-flash [high]", "claude-sonnet-5 [high]", "gpt-5-6-sol [low]", "gpt-5-6-luna [high]", "glm-5-2 [max]", "claude-opus-4-8 [low]", "claude-sonnet-5 [medium]", "gemini-3-5-flash [medium]", "glm-5-2 [high]", "gpt-5-6-terra [medium]", "kimi-k2-7-code", "claude-sonnet-5 [low]", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gpt-5-6-terra [low]", "gemini-3-1-pro-preview [high]", "gpt-5-6-luna [medium]", "gpt-5-6-luna [low]"]
+    x-axis ["claude-opus-5 [max]", "claude-opus-5 [xhigh]", "claude-opus-5 [high]", "gpt-5-6-sol [max]", "gpt-5-6-sol [xhigh]", "claude-fable-5 [xhigh]", "claude-fable-5 [max]", "gpt-5-6-terra [max]", "gpt-5-6-sol [high]", "claude-opus-5 [medium]", "claude-fable-5 [high]", "kimi-k3 [max]", "grok-4-6 [medium]", "gpt-5-6-luna [max]", "gpt-5-5 [xhigh]", "grok-4-6 [xhigh]", "claude-fable-5 [medium]", "grok-4-6 [high]", "gpt-5-5 [high]", "deepseek-v4-pro [max]", "gpt-5-6-sol [medium]", "gpt-5-6-terra [xhigh]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-5 [low]", "qwen3-8-max [xhigh]", "gpt-5-6-luna [xhigh]", "muse-spark-1-2 [xhigh]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-sonnet-5 [max]", "gpt-5-6-terra [high]", "grok-4-5 [high]", "deepseek-v4-flash [max]", "muse-spark-1-1 [xhigh]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-sonnet-5 [xhigh]", "claude-opus-4-8 [medium]", "gemini-3-6-flash [high]", "claude-sonnet-5 [high]", "gpt-5-6-sol [low]", "gpt-5-6-luna [high]", "glm-5-2 [max]", "grok-4-6 [low]", "claude-opus-4-8 [low]", "claude-sonnet-5 [medium]", "gemini-3-5-flash [medium]", "glm-5-2 [high]", "gpt-5-6-terra [medium]", "kimi-k2-7-code", "claude-sonnet-5 [low]", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gpt-5-6-terra [low]", "gemini-3-1-pro-preview [high]", "gpt-5-6-luna [medium]", "gpt-5-6-luna [low]"]
     y-axis "pass at 1 (%)" 0 --> 80
-    bar [73.6, 73.2, 72.8, 72.7, 70.7, 69.9, 69.7, 69.6, 69.4, 68.9, 68.6, 68.5, 67.2, 67.0, 65.4, 64.4, 61.1, 60.2, 59.6, 59.0, 58.1, 57.5, 56.9, 54.9, 54.4, 54.0, 53.8, 53.8, 53.8, 53.3, 53.3, 51.8, 51.8, 49.7, 48.7, 48.6, 48.2, 45.4, 44.2, 43.8, 40.8, 39.8, 37.4, 36.3, 35.1, 30.5, 30.5, 29.9, 27.0, 24.1, 11.8, 11.3, 1.5]
+    bar [73.6, 73.2, 72.8, 72.7, 70.7, 69.9, 69.7, 69.6, 69.4, 68.9, 68.6, 68.5, 67.5, 67.2, 67.0, 66.7, 65.4, 65.2, 64.4, 62.8, 61.1, 60.2, 59.6, 59.0, 58.1, 57.5, 56.9, 54.9, 54.4, 54.0, 53.8, 53.8, 53.8, 53.3, 53.3, 51.8, 51.8, 49.7, 48.7, 48.6, 48.2, 45.4, 44.2, 43.8, 41.6, 40.8, 39.8, 37.4, 36.3, 35.1, 30.5, 30.5, 29.9, 27.0, 24.1, 11.8, 11.3, 1.5]
 ```
 
 ## Leaderboard
@@ -100,10 +105,14 @@ xychart-beta
 | claude-opus-5 | mini_swe_agent_claude_opus_5_medium | medium | 68.9% | 308 | 447 | $3.29 | 52.3 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_high | high | 68.6% | 295 | 430 | $9.18 | 58.74 |
 | kimi-k3 | mini_swe_agent_kimi_k3_max | max | 68.5% | 309 | 451 | $4.65 | 97.59 |
+| grok-4-6 | mini_swe_agent_grok_4_6_medium | medium | 67.5% | 305 | 452 | $3.45 | 70.29 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_max | max | 67.2% | 301 | 448 | $3.03 | 101.68 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | xhigh | 67.0% | 303 | 452 | $7.23 | 82.02 |
+| grok-4-6 | mini_swe_agent_grok_4_6_xhigh | xhigh | 66.7% | 301 | 451 | $5.50 | 87.22 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_medium | medium | 65.4% | 285 | 436 | $6.09 | 48.37 |
+| grok-4-6 | mini_swe_agent_grok_4_6_high | high | 65.2% | 294 | 451 | $4.38 | 78.96 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_high | high | 64.4% | 291 | 452 | $5.10 | 61.92 |
+| deepseek-v4-pro | mini_swe_agent_deepseek_v4_pro_max | max | 62.8% | 284 | 452 | $0.24 | 154.71 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_medium | medium | 61.1% | 276 | 452 | $1.86 | 30.91 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_xhigh | xhigh | 60.2% | 272 | 452 | $2.13 | 43.07 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_low | low | 59.6% | 258 | 433 | $3.76 | 37.8 |
@@ -128,6 +137,7 @@ xychart-beta
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_low | low | 45.4% | 205 | 452 | $1.07 | 23.36 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_high | high | 44.2% | 200 | 452 | $0.78 | 49.02 |
 | glm-5-2 | mini_swe_agent_glm_5_2_max | max | 43.8% | 197 | 450 | $3.92 | 129.13 |
+| grok-4-6 | mini_swe_agent_grok_4_6_low | low | 41.6% | 187 | 449 | $1.04 | 44.19 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_low | low | 40.8% | 184 | 451 | $2.29 | 53.98 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_medium | medium | 39.8% | 179 | 450 | $4.08 | 107.61 |
 | gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | medium | 37.4% | 169 | 452 | $7.34 | 85.72 |

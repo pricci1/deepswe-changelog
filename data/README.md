@@ -16,7 +16,7 @@ Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1.1
 | --- | --- |
 | release_id | v1.1 |
 | tasks | 113 |
-| trials | 23,942 |
+| trials | 26,202 |
 | compared_to | v1 |
 | shared_configs | 10 |
 
@@ -36,10 +36,14 @@ Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1.1
 | claude-opus-5 | mini_swe_agent_claude_opus_5_medium | medium | 68.9% | 308 | 447 | $3.29 | 36,981.53 | 52.3 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_high | high | 68.6% | 295 | 430 | $9.18 | 57,287.07 | 58.74 |
 | kimi-k3 | mini_swe_agent_kimi_k3_max | max | 68.5% | 309 | 451 | $4.65 | 81,499.84 | 97.59 |
+| grok-4-6 | mini_swe_agent_grok_4_6_medium | medium | 67.5% | 305 | 452 | $3.45 | 49,764 | 70.29 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_max | max | 67.2% | 301 | 448 | $3.03 | 73,399.71 | 101.68 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | xhigh | 67.0% | 303 | 452 | $7.23 | 46,294.72 | 82.02 |
+| grok-4-6 | mini_swe_agent_grok_4_6_xhigh | xhigh | 66.7% | 301 | 451 | $5.50 | 71,403.54 | 87.22 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_medium | medium | 65.4% | 285 | 436 | $6.09 | 40,201.35 | 48.37 |
+| grok-4-6 | mini_swe_agent_grok_4_6_high | high | 65.2% | 294 | 451 | $4.38 | 61,160.94 | 78.96 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_high | high | 64.4% | 291 | 452 | $5.10 | 31,159.5 | 61.92 |
+| deepseek-v4-pro | mini_swe_agent_deepseek_v4_pro_max | max | 62.8% | 284 | 452 | $0.24 | 105,998.92 | 154.71 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_medium | medium | 61.1% | 276 | 452 | $1.86 | 18,425.22 | 30.91 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_xhigh | xhigh | 60.2% | 272 | 452 | $2.13 | 39,616.54 | 43.07 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_low | low | 59.6% | 258 | 433 | $3.76 | 25,242.83 | 37.8 |
@@ -64,6 +68,7 @@ Artifact JSON source: https://deepswe.datacurve.ai/artifacts/v1.1
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_low | low | 45.4% | 205 | 452 | $1.07 | 10,579.14 | 23.36 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_high | high | 44.2% | 200 | 452 | $0.78 | 25,778.27 | 49.02 |
 | glm-5-2 | mini_swe_agent_glm_5_2_max | max | 43.8% | 197 | 450 | $3.92 | 78,175.31 | 129.13 |
+| grok-4-6 | mini_swe_agent_grok_4_6_low | low | 41.6% | 187 | 449 | $1.04 | 16,458.34 | 44.19 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_low | low | 40.8% | 184 | 451 | $2.29 | 28,922.74 | 53.98 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_medium | medium | 39.8% | 179 | 450 | $4.08 | 56,816.75 | 107.61 |
 | gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | medium | 37.4% | 169 | 452 | $7.34 | 275,777.51 | 85.72 |
