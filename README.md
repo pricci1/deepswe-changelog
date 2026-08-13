@@ -58,25 +58,28 @@ quadrantChart
     gpt-5-4 xhigh: [0.786, 0.518]
     claude-sonnet-5 xhigh: [0.55, 0.497]
     claude-opus-4-8 medium: [0.87, 0.487]
-    gemini-3-6-flash high: [0.866, 0.486]
     claude-sonnet-5 high: [0.719, 0.482]
+    gemini-3-6-flash high: [0.833, 0.467]
     gpt-5-6-sol low: [0.959, 0.454]
     gpt-5-6-luna high: [0.971, 0.442]
     glm-5-2 max: [0.852, 0.438]
     grok-4-6 low: [0.961, 0.416]
     claude-opus-4-8 low: [0.913, 0.408]
     claude-sonnet-5 medium: [0.845, 0.398]
-    gemini-3-5-flash medium: [0.722, 0.374]
     glm-5-2 high: [0.893, 0.363]
+    gemini-3-5-flash high: [0.869, 0.361]
     gpt-5-6-terra medium: [0.978, 0.351]
     kimi-k2-7-code: [0.893, 0.305]
     claude-sonnet-5 low: [0.917, 0.305]
     claude-sonnet-4-6 high: [0.791, 0.299]
     gpt-5-5 low: [0.955, 0.27]
     gpt-5-6-terra low: [0.984, 0.241]
-    gemini-3-1-pro-preview high: [0.641, 0.118]
+    gemini-3-1-pro-preview high: [0.919, 0.117]
     gpt-5-6-luna medium: [0.992, 0.113]
     gpt-5-6-luna low: [0.997, 0.015]
+    gemini-3-7-flash medium: [0.923, 0.655]
+    gemini-3-7-flash high: [0.918, 0.653]
+    gemini-3-7-flash low: [0.931, 0.538]
 ```
 
 ### pass@1 leaderboard
@@ -84,9 +87,9 @@ quadrantChart
 ```mermaid
 xychart-beta
     title "DeepSWE pass@1 leaderboard"
-    x-axis ["claude-opus-5 [max]", "claude-opus-5 [xhigh]", "claude-opus-5 [high]", "gpt-5-6-sol [max]", "gpt-5-6-sol [xhigh]", "claude-fable-5 [xhigh]", "claude-fable-5 [max]", "gpt-5-6-terra [max]", "gpt-5-6-sol [high]", "claude-opus-5 [medium]", "claude-fable-5 [high]", "kimi-k3 [max]", "grok-4-6 [medium]", "gpt-5-6-luna [max]", "gpt-5-5 [xhigh]", "grok-4-6 [xhigh]", "claude-fable-5 [medium]", "grok-4-6 [high]", "gpt-5-5 [high]", "deepseek-v4-pro [max]", "gpt-5-6-sol [medium]", "gpt-5-6-terra [xhigh]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-5 [low]", "qwen3-8-max [xhigh]", "gpt-5-6-luna [xhigh]", "muse-spark-1-2 [xhigh]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-sonnet-5 [max]", "gpt-5-6-terra [high]", "grok-4-5 [high]", "deepseek-v4-flash [max]", "muse-spark-1-1 [xhigh]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-sonnet-5 [xhigh]", "claude-opus-4-8 [medium]", "gemini-3-6-flash [high]", "claude-sonnet-5 [high]", "gpt-5-6-sol [low]", "gpt-5-6-luna [high]", "glm-5-2 [max]", "grok-4-6 [low]", "claude-opus-4-8 [low]", "claude-sonnet-5 [medium]", "gemini-3-5-flash [medium]", "glm-5-2 [high]", "gpt-5-6-terra [medium]", "kimi-k2-7-code", "claude-sonnet-5 [low]", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gpt-5-6-terra [low]", "gemini-3-1-pro-preview [high]", "gpt-5-6-luna [medium]", "gpt-5-6-luna [low]"]
+    x-axis ["claude-opus-5 [max]", "claude-opus-5 [xhigh]", "claude-opus-5 [high]", "gpt-5-6-sol [max]", "gpt-5-6-sol [xhigh]", "claude-fable-5 [xhigh]", "claude-fable-5 [max]", "gpt-5-6-terra [max]", "gpt-5-6-sol [high]", "claude-opus-5 [medium]", "claude-fable-5 [high]", "kimi-k3 [max]", "grok-4-6 [medium]", "gpt-5-6-luna [max]", "gpt-5-5 [xhigh]", "grok-4-6 [xhigh]", "claude-fable-5 [medium]", "grok-4-6 [high]", "gpt-5-5 [high]", "deepseek-v4-pro [max]", "gpt-5-6-sol [medium]", "gpt-5-6-terra [xhigh]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-5 [low]", "qwen3-8-max [xhigh]", "gpt-5-6-luna [xhigh]", "muse-spark-1-2 [xhigh]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-sonnet-5 [max]", "gpt-5-6-terra [high]", "grok-4-5 [high]", "deepseek-v4-flash [max]", "muse-spark-1-1 [xhigh]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-sonnet-5 [xhigh]", "claude-opus-4-8 [medium]", "claude-sonnet-5 [high]", "gemini-3-6-flash [high]", "gpt-5-6-sol [low]", "gpt-5-6-luna [high]", "glm-5-2 [max]", "grok-4-6 [low]", "claude-opus-4-8 [low]", "claude-sonnet-5 [medium]", "glm-5-2 [high]", "gemini-3-5-flash [high]", "gpt-5-6-terra [medium]", "kimi-k2-7-code", "claude-sonnet-5 [low]", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gpt-5-6-terra [low]", "gemini-3-1-pro-preview [high]", "gpt-5-6-luna [medium]", "gpt-5-6-luna [low]", "gemini-3-7-flash [medium]", "gemini-3-7-flash [high]", "gemini-3-7-flash [low]"]
     y-axis "pass at 1 (%)" 0 --> 80
-    bar [73.6, 73.2, 72.8, 72.7, 70.7, 69.9, 69.7, 69.6, 69.4, 68.9, 68.6, 68.5, 67.5, 67.2, 67.0, 66.7, 65.4, 65.2, 64.4, 62.8, 61.1, 60.2, 59.6, 59.0, 58.1, 57.5, 56.9, 54.9, 54.4, 54.0, 53.8, 53.8, 53.8, 53.3, 53.3, 51.8, 51.8, 49.7, 48.7, 48.6, 48.2, 45.4, 44.2, 43.8, 41.6, 40.8, 39.8, 37.4, 36.3, 35.1, 30.5, 30.5, 29.9, 27.0, 24.1, 11.8, 11.3, 1.5]
+    bar [73.6, 73.2, 72.8, 72.7, 70.7, 69.9, 69.7, 69.6, 69.4, 68.9, 68.6, 68.5, 67.5, 67.2, 67.0, 66.7, 65.4, 65.2, 64.4, 62.8, 61.1, 60.2, 59.6, 59.0, 58.1, 57.5, 56.9, 54.9, 54.4, 54.0, 53.8, 53.8, 53.8, 53.3, 53.3, 51.8, 51.8, 49.7, 48.7, 48.2, 46.7, 45.4, 44.2, 43.8, 41.6, 40.8, 39.8, 36.3, 36.1, 35.1, 30.5, 30.5, 29.9, 27.0, 24.1, 11.7, 11.3, 1.5, 65.5, 65.3, 53.8]
 ```
 
 ## Leaderboard
@@ -132,24 +135,27 @@ xychart-beta
 | gpt-5-4 | mini_swe_agent_gpt_5_4_xhigh | xhigh | 51.8% | 234 | 452 | $5.65 | 70.47 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_xhigh | xhigh | 49.7% | 224 | 451 | $11.89 | 185.53 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_medium | medium | 48.7% | 220 | 452 | $3.44 | 65.57 |
-| gemini-3-6-flash | mini_swe_agent_gemini_3_6_flash_high | high | 48.6% | 219 | 451 | $3.53 | 108.31 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_high | high | 48.2% | 218 | 452 | $7.43 | 146.58 |
+| gemini-3-6-flash | mini_swe_agent_gemini_3_6_flash_high | high | 46.7% | 211 | 452 | $4.42 | 116.73 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_low | low | 45.4% | 205 | 452 | $1.07 | 23.36 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_high | high | 44.2% | 200 | 452 | $0.78 | 49.02 |
 | glm-5-2 | mini_swe_agent_glm_5_2_max | max | 43.8% | 197 | 450 | $3.92 | 129.13 |
 | grok-4-6 | mini_swe_agent_grok_4_6_low | low | 41.6% | 187 | 449 | $1.04 | 44.19 |
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_low | low | 40.8% | 184 | 451 | $2.29 | 53.98 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_medium | medium | 39.8% | 179 | 450 | $4.08 | 107.61 |
-| gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_medium | medium | 37.4% | 169 | 452 | $7.34 | 85.72 |
 | glm-5-2 | mini_swe_agent_glm_5_2_high | high | 36.3% | 164 | 452 | $2.84 | 121.88 |
+| gemini-3-5-flash | mini_swe_agent_gemini_3_5_flash_high | high | 36.1% | 163 | 452 | $3.45 | 105.3 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_medium | medium | 35.1% | 158 | 450 | $0.58 | 25.15 |
 | kimi-k2-7-code | mini_swe_agent_kimi_k2_7_code_default |  | 30.5% | 138 | 452 | $2.82 | 149.12 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_low | low | 30.5% | 137 | 449 | $2.19 | 76.89 |
 | claude-sonnet-4-6 | mini_swe_agent_claude_sonnet_4_6_high | high | 29.9% | 135 | 451 | $5.52 | 133.66 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_low | low | 27.0% | 122 | 452 | $1.20 | 28.07 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_low | low | 24.1% | 108 | 449 | $0.43 | 21.46 |
-| gemini-3-1-pro-preview | mini_swe_agent_gemini_3_1_pro_preview_high | high | 11.8% | 53 | 451 | $9.48 | 81.39 |
+| gemini-3-1-pro-preview | mini_swe_agent_gemini_3_1_pro_preview_high | high | 11.7% | 53 | 452 | $2.14 | 75.56 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_medium | medium | 11.3% | 51 | 452 | $0.22 | 23.68 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_low | low | 1.5% | 7 | 452 | $0.07 | 12.46 |
+| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_medium | medium | 65.5% | 296 | 452 | $2.03 | 117.37 |
+| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_high | high | 65.3% | 295 | 452 | $2.18 | 124.52 |
+| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_low | low | 53.8% | 243 | 452 | $1.83 | 130.38 |
 
 See [the full generated data report](data/README.md) for release metadata, v1.1 delta, task coverage, and raw snapshot links.
