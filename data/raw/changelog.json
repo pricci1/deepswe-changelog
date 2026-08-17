@@ -1,0 +1,189 @@
+{
+  "entries": [
+    {
+      "date": "Aug 14, 2026",
+      "sections": [
+        {
+          "category": "Reporting",
+          "items": [
+            "Updated Gemini 3.6 Flash results to account for adjusted pricing after Google's [Aug 13 price cut](https://ai.google.dev/gemini-api/docs/pricing), which moved it to the same 50% introductory rate as Gemini 3.7 Flash through Dec 31, 2026.",
+            "Corrected DeepSeek v4 Pro costs. DeepSeek's [May 22 75% price cut](https://x.com/deepseek_ai/status/2057854261699195173) was being applied to results that were already billed at the [reduced rates](https://api-docs.deepseek.com/quick_start/pricing/)."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Aug 13, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added Gemini 3.7 Flash results."
+          ]
+        },
+        {
+          "category": "Reporting",
+          "items": [
+            "Re-ran Gemini 3.1 Pro, Gemini 3.5 Flash, and Gemini 3.6 Flash. A [LiteLLM issue](https://github.com/BerriAI/litellm/issues/23731) had double-counted tokens and overestimated their costs."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Aug 12, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added DeepSeek v4 Pro results.",
+            "Added Grok 4.6 results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Aug 7, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added Muse Spark 1.2 results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Aug 6, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added DeepSeek v4 Flash results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Aug 4, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added Qwen 3.8 Max results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Jul 30, 2026",
+      "sections": [
+        {
+          "category": "Reporting",
+          "items": [
+            "Updated GPT-5.6 Terra and GPT-5.6 Luna results to account for adjusted pricing after OpenAI's [Jul 30 rate cuts](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/)."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Jul 25, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added Claude Opus 5 results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Jul 22, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added Gemini 3.6 Flash results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Jul 18, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added Kimi K3 results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Jul 16, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added Grok 4.5 results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Jul 14, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added Muse Spark 1.1 results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Jul 10, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added GPT-5.6 Sol, GPT-5.6 Terra, and GPT-5.6 Luna results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Jul 2, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added Claude Sonnet 5 results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Jun 21, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added GLM 5.2 results."
+          ]
+        }
+      ]
+    },
+    {
+      "date": "Jun 15, 2026",
+      "sections": [
+        {
+          "category": "Benchmark",
+          "items": [
+            "DeepSWE v1.1 released: 113 tasks with isolated verification and structured test reports.",
+            "Initial leaderboard: Claude Fable 5, Claude Opus 4.8, Claude Sonnet 4.6, Gemini 3.1 Pro, Gemini 3.5 Flash, GPT-5.4, GPT-5.5, and Kimi K2.7 Code."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,114 @@ This repository tracks changes to the published DeepSWE benchmark results.
 
 > **Original source:** DeepSWE is published by DataCurve at [deepswe.datacurve.ai](https://deepswe.datacurve.ai). Please visit the original site for the canonical benchmark presentation and context.
 
-A scheduled GitHub workflow runs `bun run scrape`, normalizes the public artifact JSON, and commits only when result data changes.
+A scheduled GitHub workflow runs `bun run scrape`, normalizes the public artifact JSON, scrapes the changelog page, and commits only when the published data changes.
+
+## Changelog
+
+Source: [DeepSWE changelog](https://deepswe.datacurve.ai/changelog)
+
+### Aug 14, 2026
+
+#### Reporting
+
+- Updated Gemini 3.6 Flash results to account for adjusted pricing after Google's [Aug 13 price cut](https://ai.google.dev/gemini-api/docs/pricing), which moved it to the same 50% introductory rate as Gemini 3.7 Flash through Dec 31, 2026.
+- Corrected DeepSeek v4 Pro costs. DeepSeek's [May 22 75% price cut](https://x.com/deepseek_ai/status/2057854261699195173) was being applied to results that were already billed at the [reduced rates](https://api-docs.deepseek.com/quick_start/pricing/).
+
+### Aug 13, 2026
+
+#### Models
+
+- Added Gemini 3.7 Flash results.
+
+#### Reporting
+
+- Re-ran Gemini 3.1 Pro, Gemini 3.5 Flash, and Gemini 3.6 Flash. A [LiteLLM issue](https://github.com/BerriAI/litellm/issues/23731) had double-counted tokens and overestimated their costs.
+
+### Aug 12, 2026
+
+#### Models
+
+- Added DeepSeek v4 Pro results.
+- Added Grok 4.6 results.
+
+### Aug 7, 2026
+
+#### Models
+
+- Added Muse Spark 1.2 results.
+
+### Aug 6, 2026
+
+#### Models
+
+- Added DeepSeek v4 Flash results.
+
+### Aug 4, 2026
+
+#### Models
+
+- Added Qwen 3.8 Max results.
+
+### Jul 30, 2026
+
+#### Reporting
+
+- Updated GPT-5.6 Terra and GPT-5.6 Luna results to account for adjusted pricing after OpenAI's [Jul 30 rate cuts](https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/).
+
+### Jul 25, 2026
+
+#### Models
+
+- Added Claude Opus 5 results.
+
+### Jul 22, 2026
+
+#### Models
+
+- Added Gemini 3.6 Flash results.
+
+### Jul 18, 2026
+
+#### Models
+
+- Added Kimi K3 results.
+
+### Jul 16, 2026
+
+#### Models
+
+- Added Grok 4.5 results.
+
+### Jul 14, 2026
+
+#### Models
+
+- Added Muse Spark 1.1 results.
+
+### Jul 10, 2026
+
+#### Models
+
+- Added GPT-5.6 Sol, GPT-5.6 Terra, and GPT-5.6 Luna results.
+
+### Jul 2, 2026
+
+#### Models
+
+- Added Claude Sonnet 5 results.
+
+### Jun 21, 2026
+
+#### Models
+
+- Added GLM 5.2 results.
+
+### Jun 15, 2026
+
+#### Benchmark
+
+- DeepSWE v1.1 released: 113 tasks with isolated verification and structured test reports.
+- Initial leaderboard: Claude Fable 5, Claude Opus 4.8, Claude Sonnet 4.6, Gemini 3.1 Pro, Gemini 3.5 Flash, GPT-5.4, GPT-5.5, and Kimi K2.7 Code.
 
 ## Charts
 
