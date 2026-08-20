@@ -17,7 +17,7 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 | --- | --- |
 | release_id | v1.1 |
 | tasks | 113 |
-| trials | 27,558 |
+| trials | 28,010 |
 | compared_to | v1 |
 | shared_configs | 9 |
 
@@ -34,6 +34,7 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 | claude-fable-5 | mini_swe_agent_claude_fable_5_max | max | 69.7% | 304 | 436 | $21.63 | 118,592.77 | 88.43 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_max | max | 69.6% | 314 | 451 | $4.95 | 71,938.63 | 75.93 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_high | high | 69.4% | 313 | 451 | $3.47 | 28,450.32 | 36.89 |
+| glm-5-3 | mini_swe_agent_glm_5_3_max | max | 69.0% | 311 | 451 | $3.99 | 80,435.61 | 124.47 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_medium | medium | 68.9% | 308 | 447 | $3.29 | 36,981.53 | 52.3 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_high | high | 68.6% | 295 | 430 | $9.18 | 57,287.07 | 58.74 |
 | kimi-k3 | mini_swe_agent_kimi_k3_max | max | 68.5% | 309 | 451 | $4.65 | 81,499.84 | 97.59 |
@@ -41,7 +42,9 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_max | max | 67.2% | 301 | 448 | $3.03 | 73,399.71 | 101.68 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | xhigh | 67.0% | 303 | 452 | $7.23 | 46,294.72 | 82.02 |
 | grok-4-6 | mini_swe_agent_grok_4_6_xhigh | xhigh | 66.7% | 301 | 451 | $5.50 | 71,403.54 | 87.22 |
+| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_medium | medium | 65.5% | 296 | 452 | $2.03 | 93,990.85 | 117.37 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_medium | medium | 65.4% | 285 | 436 | $6.09 | 40,201.35 | 48.37 |
+| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_high | high | 65.3% | 295 | 452 | $2.18 | 107,248.3 | 124.52 |
 | grok-4-6 | mini_swe_agent_grok_4_6_high | high | 65.2% | 294 | 451 | $4.38 | 61,160.94 | 78.96 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_high | high | 64.4% | 291 | 452 | $5.10 | 31,159.5 | 61.92 |
 | deepseek-v4-pro | mini_swe_agent_deepseek_v4_pro_max | max | 62.8% | 284 | 452 | $0.24 | 105,998.92 | 154.71 |
@@ -56,6 +59,7 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_xhigh | xhigh | 54.4% | 243 | 447 | $8.01 | 86,088.79 | 94.64 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_medium | medium | 54.0% | 244 | 452 | $2.75 | 19,625.43 | 45.98 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_max | max | 53.8% | 238 | 442 | $26.40 | 214,117.55 | 268.45 |
+| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_low | low | 53.8% | 243 | 452 | $1.83 | 73,364.96 | 130.38 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_high | high | 53.8% | 243 | 452 | $1.13 | 21,517.04 | 33.51 |
 | grok-4-5 | mini_swe_agent_grok_4_5_high | high | 53.8% | 243 | 452 | $2.42 | 35,525.33 | 61.33 |
 | deepseek-v4-flash | mini_swe_agent_deepseek_v4_flash_max | max | 53.3% | 241 | 452 | $0.10 | 107,687.02 | 152.88 |
@@ -83,9 +87,6 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 | gemini-3-1-pro-preview | mini_swe_agent_gemini_3_1_pro_preview_high | high | 11.7% | 53 | 452 | $2.14 | 28,368.88 | 75.56 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_medium | medium | 11.3% | 51 | 452 | $0.22 | 8,179.57 | 23.68 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_low | low | 1.5% | 7 | 452 | $0.07 | 3,127.75 | 12.46 |
-| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_medium | medium | 65.5% | 296 | 452 | $2.03 | 93,990.85 | 117.37 |
-| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_high | high | 65.3% | 295 | 452 | $2.18 | 107,248.3 | 124.52 |
-| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_low | low | 53.8% | 243 | 452 | $1.83 | 73,364.96 | 130.38 |
 
 ## v1.1 delta vs v1
 

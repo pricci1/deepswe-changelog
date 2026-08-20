@@ -135,6 +135,7 @@ quadrantChart
     claude-fable-5 max: [0.18, 0.697]
     gpt-5-6-terra max: [0.813, 0.696]
     gpt-5-6-sol high: [0.869, 0.694]
+    glm-5-3 max: [0.849, 0.69]
     claude-opus-5 medium: [0.875, 0.689]
     claude-fable-5 high: [0.652, 0.686]
     kimi-k3 max: [0.824, 0.685]
@@ -142,7 +143,9 @@ quadrantChart
     gpt-5-6-luna max: [0.885, 0.672]
     gpt-5-5 xhigh: [0.726, 0.67]
     grok-4-6 xhigh: [0.792, 0.667]
+    gemini-3-7-flash medium: [0.923, 0.655]
     claude-fable-5 medium: [0.769, 0.654]
+    gemini-3-7-flash high: [0.918, 0.653]
     grok-4-6 high: [0.834, 0.652]
     gpt-5-5 high: [0.807, 0.644]
     deepseek-v4-pro max: [0.991, 0.628]
@@ -157,6 +160,7 @@ quadrantChart
     claude-opus-4-8 xhigh: [0.697, 0.544]
     gpt-5-5 medium: [0.896, 0.54]
     claude-sonnet-5 max: [0, 0.538]
+    gemini-3-7-flash low: [0.931, 0.538]
     gpt-5-6-terra high: [0.957, 0.538]
     grok-4-5 high: [0.908, 0.538]
     deepseek-v4-flash max: [0.996, 0.533]
@@ -184,9 +188,6 @@ quadrantChart
     gemini-3-1-pro-preview high: [0.919, 0.117]
     gpt-5-6-luna medium: [0.992, 0.113]
     gpt-5-6-luna low: [0.997, 0.015]
-    gemini-3-7-flash medium: [0.923, 0.655]
-    gemini-3-7-flash high: [0.918, 0.653]
-    gemini-3-7-flash low: [0.931, 0.538]
 ```
 
 ### pass@1 leaderboard
@@ -194,9 +195,9 @@ quadrantChart
 ```mermaid
 xychart-beta
     title "DeepSWE pass@1 leaderboard"
-    x-axis ["claude-opus-5 [max]", "claude-opus-5 [xhigh]", "claude-opus-5 [high]", "gpt-5-6-sol [max]", "gpt-5-6-sol [xhigh]", "claude-fable-5 [xhigh]", "claude-fable-5 [max]", "gpt-5-6-terra [max]", "gpt-5-6-sol [high]", "claude-opus-5 [medium]", "claude-fable-5 [high]", "kimi-k3 [max]", "grok-4-6 [medium]", "gpt-5-6-luna [max]", "gpt-5-5 [xhigh]", "grok-4-6 [xhigh]", "claude-fable-5 [medium]", "grok-4-6 [high]", "gpt-5-5 [high]", "deepseek-v4-pro [max]", "gpt-5-6-sol [medium]", "gpt-5-6-terra [xhigh]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-5 [low]", "qwen3-8-max [xhigh]", "gpt-5-6-luna [xhigh]", "muse-spark-1-2 [xhigh]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-sonnet-5 [max]", "gpt-5-6-terra [high]", "grok-4-5 [high]", "deepseek-v4-flash [max]", "muse-spark-1-1 [xhigh]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-sonnet-5 [xhigh]", "claude-opus-4-8 [medium]", "claude-sonnet-5 [high]", "gemini-3-6-flash [high]", "gpt-5-6-sol [low]", "gpt-5-6-luna [high]", "glm-5-2 [max]", "grok-4-6 [low]", "claude-opus-4-8 [low]", "claude-sonnet-5 [medium]", "glm-5-2 [high]", "gemini-3-5-flash [high]", "gpt-5-6-terra [medium]", "kimi-k2-7-code", "claude-sonnet-5 [low]", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gpt-5-6-terra [low]", "gemini-3-1-pro-preview [high]", "gpt-5-6-luna [medium]", "gpt-5-6-luna [low]", "gemini-3-7-flash [medium]", "gemini-3-7-flash [high]", "gemini-3-7-flash [low]"]
+    x-axis ["claude-opus-5 [max]", "claude-opus-5 [xhigh]", "claude-opus-5 [high]", "gpt-5-6-sol [max]", "gpt-5-6-sol [xhigh]", "claude-fable-5 [xhigh]", "claude-fable-5 [max]", "gpt-5-6-terra [max]", "gpt-5-6-sol [high]", "glm-5-3 [max]", "claude-opus-5 [medium]", "claude-fable-5 [high]", "kimi-k3 [max]", "grok-4-6 [medium]", "gpt-5-6-luna [max]", "gpt-5-5 [xhigh]", "grok-4-6 [xhigh]", "gemini-3-7-flash [medium]", "claude-fable-5 [medium]", "gemini-3-7-flash [high]", "grok-4-6 [high]", "gpt-5-5 [high]", "deepseek-v4-pro [max]", "gpt-5-6-sol [medium]", "gpt-5-6-terra [xhigh]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-5 [low]", "qwen3-8-max [xhigh]", "gpt-5-6-luna [xhigh]", "muse-spark-1-2 [xhigh]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-sonnet-5 [max]", "gemini-3-7-flash [low]", "gpt-5-6-terra [high]", "grok-4-5 [high]", "deepseek-v4-flash [max]", "muse-spark-1-1 [xhigh]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-sonnet-5 [xhigh]", "claude-opus-4-8 [medium]", "claude-sonnet-5 [high]", "gemini-3-6-flash [high]", "gpt-5-6-sol [low]", "gpt-5-6-luna [high]", "glm-5-2 [max]", "grok-4-6 [low]", "claude-opus-4-8 [low]", "claude-sonnet-5 [medium]", "glm-5-2 [high]", "gemini-3-5-flash [high]", "gpt-5-6-terra [medium]", "kimi-k2-7-code", "claude-sonnet-5 [low]", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gpt-5-6-terra [low]", "gemini-3-1-pro-preview [high]", "gpt-5-6-luna [medium]", "gpt-5-6-luna [low]"]
     y-axis "pass at 1 (%)" 0 --> 80
-    bar [73.6, 73.2, 72.8, 72.7, 70.7, 69.9, 69.7, 69.6, 69.4, 68.9, 68.6, 68.5, 67.5, 67.2, 67.0, 66.7, 65.4, 65.2, 64.4, 62.8, 61.1, 60.2, 59.6, 59.0, 58.1, 57.5, 56.9, 54.9, 54.4, 54.0, 53.8, 53.8, 53.8, 53.3, 53.3, 51.8, 51.8, 49.7, 48.7, 48.2, 46.7, 45.4, 44.2, 43.8, 41.6, 40.8, 39.8, 36.3, 36.1, 35.1, 30.5, 30.5, 29.9, 27.0, 24.1, 11.7, 11.3, 1.5, 65.5, 65.3, 53.8]
+    bar [73.6, 73.2, 72.8, 72.7, 70.7, 69.9, 69.7, 69.6, 69.4, 69.0, 68.9, 68.6, 68.5, 67.5, 67.2, 67.0, 66.7, 65.5, 65.4, 65.3, 65.2, 64.4, 62.8, 61.1, 60.2, 59.6, 59.0, 58.1, 57.5, 56.9, 54.9, 54.4, 54.0, 53.8, 53.8, 53.8, 53.8, 53.3, 53.3, 51.8, 51.8, 49.7, 48.7, 48.2, 46.7, 45.4, 44.2, 43.8, 41.6, 40.8, 39.8, 36.3, 36.1, 35.1, 30.5, 30.5, 29.9, 27.0, 24.1, 11.7, 11.3, 1.5]
 ```
 
 ## Leaderboard
@@ -212,6 +213,7 @@ xychart-beta
 | claude-fable-5 | mini_swe_agent_claude_fable_5_max | max | 69.7% | 304 | 436 | $21.63 | 88.43 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_max | max | 69.6% | 314 | 451 | $4.95 | 75.93 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_high | high | 69.4% | 313 | 451 | $3.47 | 36.89 |
+| glm-5-3 | mini_swe_agent_glm_5_3_max | max | 69.0% | 311 | 451 | $3.99 | 124.47 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_medium | medium | 68.9% | 308 | 447 | $3.29 | 52.3 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_high | high | 68.6% | 295 | 430 | $9.18 | 58.74 |
 | kimi-k3 | mini_swe_agent_kimi_k3_max | max | 68.5% | 309 | 451 | $4.65 | 97.59 |
@@ -219,7 +221,9 @@ xychart-beta
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_max | max | 67.2% | 301 | 448 | $3.03 | 101.68 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | xhigh | 67.0% | 303 | 452 | $7.23 | 82.02 |
 | grok-4-6 | mini_swe_agent_grok_4_6_xhigh | xhigh | 66.7% | 301 | 451 | $5.50 | 87.22 |
+| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_medium | medium | 65.5% | 296 | 452 | $2.03 | 117.37 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_medium | medium | 65.4% | 285 | 436 | $6.09 | 48.37 |
+| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_high | high | 65.3% | 295 | 452 | $2.18 | 124.52 |
 | grok-4-6 | mini_swe_agent_grok_4_6_high | high | 65.2% | 294 | 451 | $4.38 | 78.96 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_high | high | 64.4% | 291 | 452 | $5.10 | 61.92 |
 | deepseek-v4-pro | mini_swe_agent_deepseek_v4_pro_max | max | 62.8% | 284 | 452 | $0.24 | 154.71 |
@@ -234,6 +238,7 @@ xychart-beta
 | claude-opus-4-8 | mini_swe_agent_claude_opus_4_8_xhigh | xhigh | 54.4% | 243 | 447 | $8.01 | 94.64 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_medium | medium | 54.0% | 244 | 452 | $2.75 | 45.98 |
 | claude-sonnet-5 | mini_swe_agent_claude_sonnet_5_max | max | 53.8% | 238 | 442 | $26.40 | 268.45 |
+| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_low | low | 53.8% | 243 | 452 | $1.83 | 130.38 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_high | high | 53.8% | 243 | 452 | $1.13 | 33.51 |
 | grok-4-5 | mini_swe_agent_grok_4_5_high | high | 53.8% | 243 | 452 | $2.42 | 61.33 |
 | deepseek-v4-flash | mini_swe_agent_deepseek_v4_flash_max | max | 53.3% | 241 | 452 | $0.10 | 152.88 |
@@ -261,8 +266,5 @@ xychart-beta
 | gemini-3-1-pro-preview | mini_swe_agent_gemini_3_1_pro_preview_high | high | 11.7% | 53 | 452 | $2.14 | 75.56 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_medium | medium | 11.3% | 51 | 452 | $0.22 | 23.68 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_low | low | 1.5% | 7 | 452 | $0.07 | 12.46 |
-| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_medium | medium | 65.5% | 296 | 452 | $2.03 | 117.37 |
-| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_high | high | 65.3% | 295 | 452 | $2.18 | 124.52 |
-| gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_low | low | 53.8% | 243 | 452 | $1.83 | 130.38 |
 
 See [the full generated data report](data/README.md) for release metadata, v1.1 delta, task coverage, and raw snapshot links.
