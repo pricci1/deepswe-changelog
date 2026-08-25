@@ -1,6 +1,18 @@
 {
   "entries": [
     {
+      "date": "Aug 21, 2026",
+      "sections": [
+        {
+          "category": "Reporting",
+          "items": [
+            "Updated DeepSeek v4 Pro and DeepSeek v4 Flash results to account for adjusted pricing after DeepSeek's [Aug 16 price change](https://api-docs.deepseek.com/news/news260813), which raised both models' rates and introduced peak and off-peak pricing. Costs use the [peak rates](https://api-docs.deepseek.com/quick_start/pricing/); off-peak is half.",
+            "Updated GPT-5.6 Sol results to account for adjusted pricing after OpenAI's [Aug 20 price cut](https://developers.openai.com/api/docs/changelog) (20% on input, 33% on output; promotional through at least Nov 21, 2026)."
+          ]
+        }
+      ]
+    },
+    {
       "date": "Aug 14, 2026",
       "sections": [
         {
