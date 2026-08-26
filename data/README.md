@@ -17,7 +17,7 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 | --- | --- |
 | release_id | v1.1 |
 | tasks | 113 |
-| trials | 28,010 |
+| trials | 28,458 |
 | compared_to | v1 |
 | shared_configs | 9 |
 
@@ -47,6 +47,7 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 | gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_high | high | 65.3% | 295 | 452 | $2.18 | 107,248.3 | 124.52 |
 | grok-4-6 | mini_swe_agent_grok_4_6_high | high | 65.2% | 294 | 451 | $4.38 | 61,160.94 | 78.96 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_high | high | 64.4% | 291 | 452 | $5.10 | 31,159.5 | 61.92 |
+| glm-5-3-flash | mini_swe_agent_glm_5_3_flash_max | max | 63.4% | 284 | 448 | $0.48 | 72,829.77 | 122.89 |
 | deepseek-v4-pro | mini_swe_agent_deepseek_v4_pro_max | max | 62.8% | 284 | 452 | $0.24 | 105,998.92 | 154.71 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_medium | medium | 61.1% | 276 | 452 | $1.86 | 18,425.22 | 30.91 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_xhigh | xhigh | 60.2% | 272 | 452 | $2.13 | 39,616.54 | 43.07 |

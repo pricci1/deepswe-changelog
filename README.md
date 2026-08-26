@@ -155,6 +155,7 @@ quadrantChart
     gemini-3-7-flash high: [0.918, 0.653]
     grok-4-6 high: [0.834, 0.652]
     gpt-5-5 high: [0.807, 0.644]
+    glm-5-3-flash max: [0.982, 0.634]
     deepseek-v4-pro max: [0.991, 0.628]
     gpt-5-6-sol medium: [0.929, 0.611]
     gpt-5-6-terra xhigh: [0.919, 0.602]
@@ -202,9 +203,9 @@ quadrantChart
 ```mermaid
 xychart-beta
     title "DeepSWE pass@1 leaderboard"
-    x-axis ["claude-opus-5 [max]", "claude-opus-5 [xhigh]", "claude-opus-5 [high]", "gpt-5-6-sol [max]", "gpt-5-6-sol [xhigh]", "claude-fable-5 [xhigh]", "claude-fable-5 [max]", "gpt-5-6-terra [max]", "gpt-5-6-sol [high]", "glm-5-3 [max]", "claude-opus-5 [medium]", "claude-fable-5 [high]", "kimi-k3 [max]", "grok-4-6 [medium]", "gpt-5-6-luna [max]", "gpt-5-5 [xhigh]", "grok-4-6 [xhigh]", "gemini-3-7-flash [medium]", "claude-fable-5 [medium]", "gemini-3-7-flash [high]", "grok-4-6 [high]", "gpt-5-5 [high]", "deepseek-v4-pro [max]", "gpt-5-6-sol [medium]", "gpt-5-6-terra [xhigh]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-5 [low]", "qwen3-8-max [xhigh]", "gpt-5-6-luna [xhigh]", "muse-spark-1-2 [xhigh]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-sonnet-5 [max]", "gemini-3-7-flash [low]", "gpt-5-6-terra [high]", "grok-4-5 [high]", "deepseek-v4-flash [max]", "muse-spark-1-1 [xhigh]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-sonnet-5 [xhigh]", "claude-opus-4-8 [medium]", "claude-sonnet-5 [high]", "gemini-3-6-flash [high]", "gpt-5-6-sol [low]", "gpt-5-6-luna [high]", "glm-5-2 [max]", "grok-4-6 [low]", "claude-opus-4-8 [low]", "claude-sonnet-5 [medium]", "glm-5-2 [high]", "gemini-3-5-flash [high]", "gpt-5-6-terra [medium]", "kimi-k2-7-code", "claude-sonnet-5 [low]", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gpt-5-6-terra [low]", "gemini-3-1-pro-preview [high]", "gpt-5-6-luna [medium]", "gpt-5-6-luna [low]"]
+    x-axis ["claude-opus-5 [max]", "claude-opus-5 [xhigh]", "claude-opus-5 [high]", "gpt-5-6-sol [max]", "gpt-5-6-sol [xhigh]", "claude-fable-5 [xhigh]", "claude-fable-5 [max]", "gpt-5-6-terra [max]", "gpt-5-6-sol [high]", "glm-5-3 [max]", "claude-opus-5 [medium]", "claude-fable-5 [high]", "kimi-k3 [max]", "grok-4-6 [medium]", "gpt-5-6-luna [max]", "gpt-5-5 [xhigh]", "grok-4-6 [xhigh]", "gemini-3-7-flash [medium]", "claude-fable-5 [medium]", "gemini-3-7-flash [high]", "grok-4-6 [high]", "gpt-5-5 [high]", "glm-5-3-flash [max]", "deepseek-v4-pro [max]", "gpt-5-6-sol [medium]", "gpt-5-6-terra [xhigh]", "claude-fable-5 [low]", "claude-opus-4-8 [max]", "claude-opus-5 [low]", "qwen3-8-max [xhigh]", "gpt-5-6-luna [xhigh]", "muse-spark-1-2 [xhigh]", "claude-opus-4-8 [xhigh]", "gpt-5-5 [medium]", "claude-sonnet-5 [max]", "gemini-3-7-flash [low]", "gpt-5-6-terra [high]", "grok-4-5 [high]", "deepseek-v4-flash [max]", "muse-spark-1-1 [xhigh]", "claude-opus-4-8 [high]", "gpt-5-4 [xhigh]", "claude-sonnet-5 [xhigh]", "claude-opus-4-8 [medium]", "claude-sonnet-5 [high]", "gemini-3-6-flash [high]", "gpt-5-6-sol [low]", "gpt-5-6-luna [high]", "glm-5-2 [max]", "grok-4-6 [low]", "claude-opus-4-8 [low]", "claude-sonnet-5 [medium]", "glm-5-2 [high]", "gemini-3-5-flash [high]", "gpt-5-6-terra [medium]", "kimi-k2-7-code", "claude-sonnet-5 [low]", "claude-sonnet-4-6 [high]", "gpt-5-5 [low]", "gpt-5-6-terra [low]", "gemini-3-1-pro-preview [high]", "gpt-5-6-luna [medium]", "gpt-5-6-luna [low]"]
     y-axis "pass at 1 (%)" 0 --> 80
-    bar [73.6, 73.2, 72.8, 72.7, 70.7, 69.9, 69.7, 69.6, 69.4, 69.0, 68.9, 68.6, 68.5, 67.5, 67.2, 67.0, 66.7, 65.5, 65.4, 65.3, 65.2, 64.4, 62.8, 61.1, 60.2, 59.6, 59.0, 58.1, 57.5, 56.9, 54.9, 54.4, 54.0, 53.8, 53.8, 53.8, 53.8, 53.3, 53.3, 51.8, 51.8, 49.7, 48.7, 48.2, 46.7, 45.4, 44.2, 43.8, 41.6, 40.8, 39.8, 36.3, 36.1, 35.1, 30.5, 30.5, 29.9, 27.0, 24.1, 11.7, 11.3, 1.5]
+    bar [73.6, 73.2, 72.8, 72.7, 70.7, 69.9, 69.7, 69.6, 69.4, 69.0, 68.9, 68.6, 68.5, 67.5, 67.2, 67.0, 66.7, 65.5, 65.4, 65.3, 65.2, 64.4, 63.4, 62.8, 61.1, 60.2, 59.6, 59.0, 58.1, 57.5, 56.9, 54.9, 54.4, 54.0, 53.8, 53.8, 53.8, 53.8, 53.3, 53.3, 51.8, 51.8, 49.7, 48.7, 48.2, 46.7, 45.4, 44.2, 43.8, 41.6, 40.8, 39.8, 36.3, 36.1, 35.1, 30.5, 30.5, 29.9, 27.0, 24.1, 11.7, 11.3, 1.5]
 ```
 
 ## Leaderboard
@@ -233,6 +234,7 @@ xychart-beta
 | gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_high | high | 65.3% | 295 | 452 | $2.18 | 124.52 |
 | grok-4-6 | mini_swe_agent_grok_4_6_high | high | 65.2% | 294 | 451 | $4.38 | 78.96 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_high | high | 64.4% | 291 | 452 | $5.10 | 61.92 |
+| glm-5-3-flash | mini_swe_agent_glm_5_3_flash_max | max | 63.4% | 284 | 448 | $0.48 | 122.89 |
 | deepseek-v4-pro | mini_swe_agent_deepseek_v4_pro_max | max | 62.8% | 284 | 452 | $0.24 | 154.71 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_medium | medium | 61.1% | 276 | 452 | $1.86 | 30.91 |
 | gpt-5-6-terra | mini_swe_agent_gpt_5_6_terra_xhigh | xhigh | 60.2% | 272 | 452 | $2.13 | 43.07 |
