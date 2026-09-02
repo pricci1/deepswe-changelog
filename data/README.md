@@ -17,7 +17,7 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 | --- | --- |
 | release_id | v1.1 |
 | tasks | 113 |
-| trials | 28,458 |
+| trials | 29,357 |
 | compared_to | v1 |
 | shared_configs | 9 |
 
@@ -25,10 +25,12 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 
 | Model | Config | Effort | Pass@1 | Passed | Attempts | Avg cost | Avg output tokens | Avg steps |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gemini-3-8-flash | mini_swe_agent_gemini_3_8_flash_high | high | 73.8% | 330 | 447 | $2.36 | 143,242.66 | 166.31 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_max | max | 73.6% | 327 | 444 | $11.84 | 117,565.69 | 99.04 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_xhigh | xhigh | 73.2% | 327 | 447 | $9.07 | 91,672.02 | 88.72 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_high | high | 72.8% | 327 | 449 | $6.08 | 64,207.43 | 72.92 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_max | max | 72.7% | 327 | 450 | $8.39 | 60,013.64 | 61.25 |
+| gemini-3-8-flash | mini_swe_agent_gemini_3_8_flash_medium | medium | 71.0% | 321 | 452 | $1.97 | 124,684.36 | 147.3 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_xhigh | xhigh | 70.7% | 319 | 451 | $4.70 | 40,744.59 | 44 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_xhigh | xhigh | 69.9% | 316 | 452 | $13.41 | 80,352.17 | 68.4 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_max | max | 69.7% | 304 | 436 | $21.63 | 118,592.77 | 88.43 |
@@ -129,6 +131,12 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 | dasel-html-document-format | TomWright/dasel | go | Add HTML document format handling to Dasel |
 
 ## Changelog
+
+### Sep 1, 2026
+
+#### Models
+
+- Added Gemini 3.8 Flash results.
 
 ### Aug 21, 2026
 

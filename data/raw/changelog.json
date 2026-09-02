@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "date": "Sep 1, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added Gemini 3.8 Flash results."
+          ]
+        }
+      ]
+    },
+    {
       "date": "Aug 21, 2026",
       "sections": [
         {
