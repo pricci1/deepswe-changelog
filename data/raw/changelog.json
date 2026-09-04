@@ -1,6 +1,17 @@
 {
   "entries": [
     {
+      "date": "Sep 3, 2026",
+      "sections": [
+        {
+          "category": "Models",
+          "items": [
+            "Added GPT-6 Astra results across low, medium, high, xhigh, and max reasoning efforts, priced at the expected launch rate card."
+          ]
+        }
+      ]
+    },
+    {
       "date": "Sep 1, 2026",
       "sections": [
         {
