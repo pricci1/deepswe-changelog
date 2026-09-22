@@ -25,14 +25,14 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 
 | Model | Config | Effort | Pass@1 | Passed | Attempts | Avg cost | Avg output tokens | Avg steps |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| gpt-6-astra | mini_swe_agent_gpt_6_astra_xhigh | xhigh | 74.1% | 335 | 452 | $6.52 | 29,557.33 | 28.75 |
+| gpt-6-astra | mini_swe_agent_gpt_6_astra_xhigh | xhigh | 74.1% | 335 | 452 | $4.43 | 29,557.33 | 28.75 |
 | gemini-3-8-flash | mini_swe_agent_gemini_3_8_flash_high | high | 73.8% | 330 | 447 | $2.36 | 143,242.66 | 166.31 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_max | max | 73.6% | 327 | 444 | $11.84 | 117,565.69 | 99.04 |
-| gpt-6-astra | mini_swe_agent_gpt_6_astra_high | high | 73.2% | 331 | 452 | $5.72 | 26,505.85 | 27.42 |
-| gpt-6-astra | mini_swe_agent_gpt_6_astra_max | max | 73.2% | 331 | 452 | $12.37 | 61,148.51 | 28.45 |
+| gpt-6-astra | mini_swe_agent_gpt_6_astra_high | high | 73.2% | 331 | 452 | $3.92 | 26,505.85 | 27.42 |
+| gpt-6-astra | mini_swe_agent_gpt_6_astra_max | max | 73.2% | 331 | 452 | $7.50 | 61,148.51 | 28.45 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_xhigh | xhigh | 73.2% | 327 | 447 | $9.07 | 91,672.02 | 88.72 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_high | high | 72.8% | 327 | 449 | $6.08 | 64,207.43 | 72.92 |
-| gpt-6-astra | mini_swe_agent_gpt_6_astra_medium | medium | 72.8% | 329 | 452 | $4.38 | 20,361.81 | 26.03 |
+| gpt-6-astra | mini_swe_agent_gpt_6_astra_medium | medium | 72.8% | 329 | 452 | $3.08 | 20,361.81 | 26.03 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_max | max | 72.7% | 327 | 450 | $8.39 | 60,013.64 | 61.25 |
 | gemini-3-8-flash | mini_swe_agent_gemini_3_8_flash_medium | medium | 71.0% | 321 | 452 | $1.97 | 124,684.36 | 147.3 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_xhigh | xhigh | 70.7% | 319 | 451 | $4.70 | 40,744.59 | 44 |
@@ -47,7 +47,7 @@ Changelog source: https://deepswe.datacurve.ai/changelog
 | grok-4-6 | mini_swe_agent_grok_4_6_medium | medium | 67.5% | 305 | 452 | $3.45 | 49,764 | 70.29 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_max | max | 67.2% | 301 | 448 | $3.03 | 73,399.71 | 101.68 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | xhigh | 67.0% | 303 | 452 | $7.23 | 46,294.72 | 82.02 |
-| gpt-6-astra | mini_swe_agent_gpt_6_astra_low | low | 67.0% | 303 | 452 | $2.19 | 10,579.54 | 19.54 |
+| gpt-6-astra | mini_swe_agent_gpt_6_astra_low | low | 67.0% | 303 | 452 | $1.60 | 10,579.54 | 19.54 |
 | grok-4-6 | mini_swe_agent_grok_4_6_xhigh | xhigh | 66.7% | 301 | 451 | $5.50 | 71,403.54 | 87.22 |
 | gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_medium | medium | 65.5% | 296 | 452 | $2.03 | 93,990.85 | 117.37 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_medium | medium | 65.4% | 285 | 436 | $6.09 | 40,201.35 | 48.37 |

@@ -145,14 +145,14 @@ quadrantChart
     quadrant-2 Higher score / higher cost
     quadrant-3 Lower score / higher cost
     quadrant-4 Lower score / lower cost
-    gpt-6-astra xhigh: [0.753, 0.741]
+    gpt-6-astra xhigh: [0.832, 0.741]
     gemini-3-8-flash high: [0.911, 0.738]
     claude-opus-5 max: [0.552, 0.736]
-    gpt-6-astra high: [0.783, 0.732]
-    gpt-6-astra max: [0.531, 0.732]
+    gpt-6-astra high: [0.851, 0.732]
+    gpt-6-astra max: [0.716, 0.732]
     claude-opus-5 xhigh: [0.656, 0.732]
     claude-opus-5 high: [0.77, 0.728]
-    gpt-6-astra medium: [0.834, 0.728]
+    gpt-6-astra medium: [0.884, 0.728]
     gpt-5-6-sol max: [0.682, 0.727]
     gemini-3-8-flash medium: [0.925, 0.71]
     gpt-5-6-sol xhigh: [0.822, 0.707]
@@ -167,7 +167,7 @@ quadrantChart
     grok-4-6 medium: [0.869, 0.675]
     gpt-5-6-luna max: [0.885, 0.672]
     gpt-5-5 xhigh: [0.726, 0.67]
-    gpt-6-astra low: [0.917, 0.67]
+    gpt-6-astra low: [0.94, 0.67]
     grok-4-6 xhigh: [0.792, 0.667]
     gemini-3-7-flash medium: [0.923, 0.655]
     claude-fable-5 medium: [0.769, 0.654]
@@ -231,14 +231,14 @@ xychart-beta
 
 | Model | Config | Effort | Pass@1 | Passed | Attempts | Avg cost | Avg steps |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| gpt-6-astra | mini_swe_agent_gpt_6_astra_xhigh | xhigh | 74.1% | 335 | 452 | $6.52 | 28.75 |
+| gpt-6-astra | mini_swe_agent_gpt_6_astra_xhigh | xhigh | 74.1% | 335 | 452 | $4.43 | 28.75 |
 | gemini-3-8-flash | mini_swe_agent_gemini_3_8_flash_high | high | 73.8% | 330 | 447 | $2.36 | 166.31 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_max | max | 73.6% | 327 | 444 | $11.84 | 99.04 |
-| gpt-6-astra | mini_swe_agent_gpt_6_astra_high | high | 73.2% | 331 | 452 | $5.72 | 27.42 |
-| gpt-6-astra | mini_swe_agent_gpt_6_astra_max | max | 73.2% | 331 | 452 | $12.37 | 28.45 |
+| gpt-6-astra | mini_swe_agent_gpt_6_astra_high | high | 73.2% | 331 | 452 | $3.92 | 27.42 |
+| gpt-6-astra | mini_swe_agent_gpt_6_astra_max | max | 73.2% | 331 | 452 | $7.50 | 28.45 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_xhigh | xhigh | 73.2% | 327 | 447 | $9.07 | 88.72 |
 | claude-opus-5 | mini_swe_agent_claude_opus_5_high | high | 72.8% | 327 | 449 | $6.08 | 72.92 |
-| gpt-6-astra | mini_swe_agent_gpt_6_astra_medium | medium | 72.8% | 329 | 452 | $4.38 | 26.03 |
+| gpt-6-astra | mini_swe_agent_gpt_6_astra_medium | medium | 72.8% | 329 | 452 | $3.08 | 26.03 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_max | max | 72.7% | 327 | 450 | $8.39 | 61.25 |
 | gemini-3-8-flash | mini_swe_agent_gemini_3_8_flash_medium | medium | 71.0% | 321 | 452 | $1.97 | 147.3 |
 | gpt-5-6-sol | mini_swe_agent_gpt_5_6_sol_xhigh | xhigh | 70.7% | 319 | 451 | $4.70 | 44 |
@@ -253,7 +253,7 @@ xychart-beta
 | grok-4-6 | mini_swe_agent_grok_4_6_medium | medium | 67.5% | 305 | 452 | $3.45 | 70.29 |
 | gpt-5-6-luna | mini_swe_agent_gpt_5_6_luna_max | max | 67.2% | 301 | 448 | $3.03 | 101.68 |
 | gpt-5-5 | mini_swe_agent_gpt_5_5_xhigh | xhigh | 67.0% | 303 | 452 | $7.23 | 82.02 |
-| gpt-6-astra | mini_swe_agent_gpt_6_astra_low | low | 67.0% | 303 | 452 | $2.19 | 19.54 |
+| gpt-6-astra | mini_swe_agent_gpt_6_astra_low | low | 67.0% | 303 | 452 | $1.60 | 19.54 |
 | grok-4-6 | mini_swe_agent_grok_4_6_xhigh | xhigh | 66.7% | 301 | 451 | $5.50 | 87.22 |
 | gemini-3-7-flash | mini_swe_agent_gemini_3_7_flash_medium | medium | 65.5% | 296 | 452 | $2.03 | 117.37 |
 | claude-fable-5 | mini_swe_agent_claude_fable_5_medium | medium | 65.4% | 285 | 436 | $6.09 | 48.37 |
