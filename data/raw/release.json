@@ -1,5 +1,5 @@
 {
-  "artifact_base_url": "https://d3ujjcmjq6o8v6.cloudfront.net",
+  "artifact_base_url": "https://deepswe-downloads.datacurve.ai",
   "artifact_key_prefix": "v1.1/trial-artifacts",
   "artifact_patterns": {
     "agent_log": "v1.1/trial-artifacts/{trial_name}/agent/mini-swe-agent.txt",
